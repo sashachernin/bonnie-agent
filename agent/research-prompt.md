@@ -42,10 +42,10 @@ reach it — but do not shortcut it either.
 
 ---
 
-## Phase 1 — Signal scan (minimum 6 distinct searches)
+## Phase 1 — Signal scan (minimum 8 distinct searches)
 
-Run at least **six `WebSearch` queries with genuinely different framings**. Six
-rewordings of one query does not count. Draw from framings like:
+Run at least **eight `WebSearch` queries with genuinely different framings**.
+Eight rewordings of one query does not count. Draw from framings like:
 
 - People complaining: what are users of existing tools angry about right now?
 - Price shocks: what has recently got more expensive, or been moved behind a
@@ -93,14 +93,22 @@ Before writing anything, you must have:
   Named products, actual numbers off their pricing pages. If you genuinely cannot
   find three, say so explicitly in the post and treat it as a warning sign rather
   than an open field — "no competitors" nearly always means "no buyers".
-- **At least 2 full `WebFetch` reads** of primary pages: a pricing page, a
+- **At least 3 full `WebFetch` reads** of primary pages: a pricing page, a
   discussion thread, a documentation page, a changelog. Not just search snippets.
 - A concrete answer to: what does the buyer do *today* instead, and what does
   that cost them in money or hours?
+- **The load-bearing claim, verified.** Name the one factual claim the whole idea
+  rests on — the deadline, the price, the rule, the volume, the shutdown. Then
+  `WebFetch` a primary source for it: the vendor's own page, the regulator's own
+  page, the actual documentation. A search snippet is not verification, and a
+  blog post summarising the primary source is second best. If after trying you
+  still cannot verify it, say exactly that in the post and name it as the thing a
+  reader should check first.
 
-**Budget check.** If you have arrived here having run fewer than 6 searches or
-fewer than 2 fetches, you have not done the work. Go back to Phase 1 and search
-with different framings.
+**Budget check.** If you have arrived here having run fewer than 8 searches or
+fewer than 3 fetches, you have not done the work. Go back to Phase 1 and search
+with different framings. Roughly ten minutes of tool work is the target; if you
+are well short of it, the gap is nearly always Phase 1 breadth.
 
 ---
 
@@ -129,7 +137,7 @@ tagline: One sentence, under 140 characters, no full stop needed
 Values are plain text on one line. Do not quote them, do not use YAML lists, do
 not add keys. If a value would contain a colon followed by a space, reword it.
 
-### Body — these eight sections, in this order, as `##` headings
+### Body — these nine sections, in this order, as `##` headings
 
 ```markdown
 ## The idea
@@ -170,6 +178,12 @@ specific — "post X in Y community and see if Z happens", not "validate demand"
 ## What I rejected
 
 The two candidates you killed in Phase 2 and the one-line reason for each.
+
+## The part I would argue against
+
+The strongest case against your own idea. Not a hedge and not a list of generic
+risks — the argument a sceptical reader would actually make, put as well as they
+would put it.
 
 ## Sources
 

@@ -19,10 +19,17 @@ Task Scheduler  ->  run-agent.ps1  ->  claude -p  ->  posts/2026-09-03-morning-*
 ```
 
 The agent follows [`agent/research-prompt.md`](agent/research-prompt.md): pick a
-category it has not used recently, run at least six differently-framed web
-searches, shortlist three ideas, kill two, dig into the survivor until it has
-three real competitors with real prices, then write the post. Those depth
-requirements are what make a run take roughly ten minutes — there is no timer.
+category it has not used recently, run at least eight differently-framed web
+searches, shortlist three ideas, kill two, then dig into the survivor until it
+has three named competitors with real prices, three fully-read primary pages, and
+a verified source for the one claim the idea rests on. Those depth requirements
+are what make a run take roughly ten minutes — there is no timer, so raising or
+lowering them is how you change the length of a run.
+
+The prompt is strict about honesty: never invent a URL, price, or statistic;
+say so plainly when the evidence is thin; and end every post with the best
+argument against the idea. A run that finds nothing credible is expected to
+write that rather than pad.
 
 Ideas are not restricted to any category list. The prompt names a dozen or so
 (SaaS, ad-supported tool, mobile app, game, marketplace, hardware, service, …)
