@@ -1,0 +1,8 @@
+# Run logs, including raw agent output.
+logs/
+
+# Held only while a run is in flight.
+.agent.lock
+
+# Create this file to pause the agent; it should stay local.
+STOP
