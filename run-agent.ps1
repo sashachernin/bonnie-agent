@@ -7,7 +7,7 @@
     by hand for a one-off run. Each run:
 
       1. bails out if STOP exists or another run is still going
-      2. hands agent/research-prompt.md to the Claude Code CLI, which spends
+      2. hands agent/research-prompt.md to the Codex CLI, which spends
          about ten minutes researching and writes one file into posts/
       3. rebuilds docs/ and IDEAS.md from posts/
       4. commits and pushes
@@ -18,7 +18,7 @@
     morning or evening. Defaults to morning before 15:00, evening after.
 
 .PARAMETER Model
-    Model passed to the CLI. Default: opus.
+    Model passed to the CLI. Default: gpt-5.6-sol.
 
 .PARAMETER TimeoutMinutes
     Hard kill for the research step. Default: 30.
@@ -28,14 +28,14 @@
 
 .EXAMPLE
     .\run-agent.ps1
-    .\run-agent.ps1 -Slot evening -Model sonnet -NoPush
+    .\run-agent.ps1 -Slot evening -Model gpt-5.6-terra -NoPush
 #>
 
 [CmdletBinding()]
 param(
     [ValidateSet('morning', 'evening')]
     [string] $Slot,
-    [string] $Model = 'opus',
+    [string] $Model = 'gpt-5.6-sol',
     [int]    $TimeoutMinutes = 30,
     [switch] $NoPush
 )
@@ -92,13 +92,18 @@ if (Test-Path $Stop) {
     exit 0
 }
 
-# Atomic: fails outright if a previous run is still holding the file, which is
-# what keeps a slow morning run from colliding with the evening trigger.
+# Keeps a slow morning run from colliding with the evening trigger.
+#
+# The exclusive *handle* is the lock, not the file's existence. A run killed
+# with Ctrl+C never reaches the finally block below and leaves the file behind;
+# treating that as "locked" would silently block every future run. Because the
+# OS drops the handle when the process dies, OpenOrCreate succeeds on a
+# leftover file and fails only while a run is genuinely alive.
 try {
-    $lockStream = [IO.File]::Open($Lock, 'CreateNew', 'Write', 'None')
+    $lockStream = [IO.File]::Open($Lock, 'OpenOrCreate', 'Write', 'None')
 }
 catch {
-    Write-Log 'Another run holds the lock. Exiting.'
+    Write-Log 'Another run is in progress (lock file is held). Exiting.'
     exit 0
 }
 
@@ -107,10 +112,14 @@ $exitCode = 0
 try {
     Write-Log "Run starting. slot=$Slot model=$Model repo=$Repo"
 
-    $claudeCmd = Join-Path (Split-Path (Get-Command claude).Source) 'claude.cmd'
-    if (-not (Test-Path $claudeCmd)) {
-        throw "Claude CLI not found at $claudeCmd. Install it with: npm i -g @anthropic-ai/claude-code"
+    $codexCommand = Get-Command codex.cmd -ErrorAction SilentlyContinue
+    if (-not $codexCommand) {
+        $codexCommand = Get-Command codex.exe -ErrorAction SilentlyContinue
     }
+    if (-not $codexCommand) {
+        throw 'Codex CLI not found. Install it with: npm i -g @openai/codex'
+    }
+    $codexCmd = $codexCommand.Source
 
     # --- sync ---------------------------------------------------------------
 
@@ -146,26 +155,25 @@ try {
     ) -join "`n"
     Set-Content -Path $runPrompt -Value ($header + (Get-Content $promptFile -Raw)) -Encoding utf8
 
-    # --tools bounds which tools exist at all (note: no Bash — the agent cannot
-    # run commands, the runner does all git work itself). --allowedTools then
-    # pre-approves them, because an unattended run has nobody to answer a
-    # permission prompt and would otherwise stall on the first web search.
-    $toolset = 'Read,Write,Edit,Glob,Grep,WebSearch,WebFetch,TodoWrite'
-
+    # Live search is required for research. The workspace-write sandbox gives
+    # Codex enough access to create the post, while approval=never prevents an
+    # unattended run from stalling. The final dash reads the prompt from stdin.
     $cliArgs = @(
-        '-p',
+        '--search',
+        '--ask-for-approval', 'never',
+        'exec',
+        '--ephemeral',
+        '--sandbox', 'workspace-write',
         '--model', $Model,
-        '--permission-mode', 'acceptEdits',
-        '--tools', $toolset,
-        '--allowedTools', $toolset
+        '-'
     )
 
     $outFile = Join-Path $LogDir "$(Get-Date -Format yyyy-MM-dd)-$Slot.agent.out"
     $errFile = Join-Path $LogDir "$(Get-Date -Format yyyy-MM-dd)-$Slot.agent.err"
 
-    Write-Log "Starting research (timeout ${TimeoutMinutes}m). Agent output -> $outFile"
+    Write-Log "Starting research (timeout ${TimeoutMinutes}m). Final output -> $outFile; progress -> $errFile"
 
-    $proc = Start-Process -FilePath $claudeCmd -ArgumentList $cliArgs `
+    $proc = Start-Process -FilePath $codexCmd -ArgumentList $cliArgs `
         -WorkingDirectory $Repo -NoNewWindow -PassThru `
         -RedirectStandardInput $runPrompt `
         -RedirectStandardOutput $outFile -RedirectStandardError $errFile
@@ -183,9 +191,14 @@ try {
         Write-Log "Agent exited with code $($proc.ExitCode)."
     }
 
-    if (Test-Path $errFile) {
-        $stderr = (Get-Content $errFile -Raw)
-        if ($stderr -and $stderr.Trim()) { Write-Log "Agent stderr: $($stderr.Trim())" }
+    # Codex normally streams progress to stderr, so keep the full transcript in
+    # its own file and copy only the tail into the main log when the run fails.
+    if ($proc.HasExited -and $proc.ExitCode -ne 0 -and (Test-Path $errFile)) {
+        $stderrTail = Get-Content $errFile -Tail 20 | Where-Object { $_.Trim() }
+        if ($stderrTail) {
+            Write-Log 'Last lines of agent stderr:'
+            $stderrTail | ForEach-Object { Write-Log "  | $_" }
+        }
     }
 
     # --- verify -------------------------------------------------------------

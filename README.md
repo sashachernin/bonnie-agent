@@ -9,7 +9,7 @@ anyone.
 ## How a run works
 
 ```
-Task Scheduler  ->  run-agent.ps1  ->  claude -p  ->  posts/2026-09-03-morning-*.md
+Task Scheduler  ->  run-agent.ps1  ->  codex exec  ->  posts/2026-09-03-morning-*.md
                                             |
                                             v
                                    scripts/build.mjs  ->  docs/  +  IDEAS.md
@@ -41,8 +41,8 @@ nobody listed is the better outcome.
 - Windows with PowerShell 5.1 (built in)
 - [Node.js](https://nodejs.org) 18 or newer — `node --version`
 - Git
-- The Claude Code CLI: `npm install -g @anthropic-ai/claude-code`
-- **A completed interactive login.** Run `claude` once in a terminal and sign in.
+- The Codex CLI: `npm install -g @openai/codex`
+- **A completed interactive login.** Run `codex` once in a terminal and sign in.
   Task Scheduler cannot answer a login prompt, so an unauthenticated CLI means
   every scheduled run fails.
 
@@ -73,7 +73,7 @@ minute or two.
 
 This registers `bonnie-agent-morning` and `bonnie-agent-evening`. Re-run it any
 time to change the times. The tasks run as you, with an interactive logon,
-because the CLI uses your own `claude` credentials — they will not fire while
+because the CLI uses your own `codex` credentials — they will not fire while
 nobody is logged in.
 
 ## Running it yourself
@@ -82,7 +82,7 @@ nobody is logged in.
 .\run-agent.ps1                      # a full run right now
 .\run-agent.ps1 -Slot evening        # force the slot label
 .\run-agent.ps1 -NoPush              # commit locally, do not push
-.\run-agent.ps1 -Model sonnet        # cheaper run
+.\run-agent.ps1 -Model gpt-5.6-terra # lower-cost run
 .\run-agent.ps1 -TimeoutMinutes 45   # allow a longer research phase
 ```
 
@@ -127,9 +127,9 @@ only thing worth backing up or editing by hand.
 - The research step is killed after `-TimeoutMinutes` (default 30).
 - A failed `git push` is logged but not fatal; the commit stays local and the
   next successful run pushes it.
-- The agent is given `Read, Write, Edit, Glob, Grep, WebSearch, WebFetch,
-  TodoWrite` — no `Bash`. It cannot run commands, and the runner does all git
-  work itself.
+- Codex gets live web search and a `workspace-write` sandbox. The prompt instructs
+  it to reading `IDEAS.md` and writing one post; the runner does all build and
+  git work itself.
 
 ## Changing the blog
 
@@ -143,10 +143,10 @@ or malformed frontmatter is skipped with a warning rather than breaking the buil
 
 ## Troubleshooting
 
-**Runs do nothing.** Check `logs\<date>-<slot>.log` first, then
-`logs\<date>-<slot>.agent.out` for the agent's own output.
+**Runs do nothing.** Check `logs\<date>-<slot>.log` first, then `.agent.err` for
+Codex's progress and errors and `.agent.out` for its final message.
 
-**"Agent produced no new post."** Usually authentication. Run `claude` in a
+**"Agent produced no new post."** Usually authentication. Run `codex` in a
 terminal and confirm you are signed in.
 
 **A scheduled task never fires.** `Get-ScheduledTask -TaskName "bonnie-agent-*"`
@@ -157,5 +157,7 @@ logged in.
 **The site is stale.** GitHub Pages takes a minute after a push. Confirm
 Settings → Pages still points at `main` / `/docs`.
 
-**A run is stuck.** Delete `.agent.lock`. It is only left behind if a run was
-killed mid-flight.
+**"Another run is in progress."** A run really is going. The lock is the open
+file *handle*, not the file itself, so a `.agent.lock` left behind by a run you
+killed with Ctrl+C does not block anything — the next run reclaims it. You should
+never need to delete it by hand.

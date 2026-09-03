@@ -44,7 +44,7 @@ reach it — but do not shortcut it either.
 
 ## Phase 1 — Signal scan (minimum 8 distinct searches)
 
-Run at least **eight `WebSearch` queries with genuinely different framings**.
+Run at least **eight web searches with genuinely different framings**.
 Eight rewordings of one query does not count. Draw from framings like:
 
 - People complaining: what are users of existing tools angry about right now?
@@ -93,22 +93,23 @@ Before writing anything, you must have:
   Named products, actual numbers off their pricing pages. If you genuinely cannot
   find three, say so explicitly in the post and treat it as a warning sign rather
   than an open field — "no competitors" nearly always means "no buyers".
-- **At least 3 full `WebFetch` reads** of primary pages: a pricing page, a
-  discussion thread, a documentation page, a changelog. Not just search snippets.
+- **At least 3 full reads of primary pages opened from their actual URLs**: a
+  pricing page, a discussion thread, a documentation page, a changelog. Not just
+  search snippets.
 - A concrete answer to: what does the buyer do *today* instead, and what does
   that cost them in money or hours?
 - **The load-bearing claim, verified.** Name the one factual claim the whole idea
   rests on — the deadline, the price, the rule, the volume, the shutdown. Then
-  `WebFetch` a primary source for it: the vendor's own page, the regulator's own
+  open and read a primary source for it: the vendor's own page, the regulator's own
   page, the actual documentation. A search snippet is not verification, and a
   blog post summarising the primary source is second best. If after trying you
   still cannot verify it, say exactly that in the post and name it as the thing a
   reader should check first.
 
 **Budget check.** If you have arrived here having run fewer than 8 searches or
-fewer than 3 fetches, you have not done the work. Go back to Phase 1 and search
-with different framings. Roughly ten minutes of tool work is the target; if you
-are well short of it, the gap is nearly always Phase 1 breadth.
+fully read fewer than 3 primary pages, you have not done the work. Go back to
+Phase 1 and search with different framings. Roughly ten minutes of tool work is
+the target; if you are well short of it, the gap is nearly always Phase 1 breadth.
 
 ---
 

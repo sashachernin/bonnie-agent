@@ -9,7 +9,7 @@
     the times.
 
     The tasks run as the current user with an interactive logon, because the
-    Claude CLI uses the credentials from your own `claude` login. They will not
+    Codex CLI uses the credentials from your own `codex` login. They will not
     fire while nobody is logged in.
 
 .PARAMETER MorningTime
