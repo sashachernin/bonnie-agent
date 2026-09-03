@@ -5,5 +5,6 @@
 Newest first. The research agent reads this at the start of every run so it does
 not repeat a category it has just used.
 
+- **2026-09-03** · `marketplace monitoring service` · **An Amazon Promotion Watchdog** — Amazon sellers get failed coupons and dangerous discount combinations found and fixed before shoppers see them (`2026-09-03-evening-amazon-promotion-watchdog.md`)
 - **2026-09-03** · `vendor-exit tooling` · **Archiving the incident history Opsgenie is about to delete** — Atlassian deletes unmigrated Opsgenie data on 5 April 2027, and every migration tool ports schedules but leaves the history behind (`2026-09-03-morning-opsgenie-exit-archive.md`)
 - **2026-09-03** · `productized compliance service` · **A WCAG Fix Desk for Small Clinics** — A fixed-scope service that repairs and retests small clinic websites before the HHS accessibility deadline (`2026-09-03-morning-clinic-accessibility-desk.md`)
