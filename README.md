@@ -1,10 +1,19 @@
 # bonnie-agent
 
-Twice a day, an agent spends about ten minutes researching the web, proposes one
-business idea, and publishes it as a post on a static blog served by GitHub Pages.
+Three times a day, an agent spends about ten minutes researching the web, proposes one
+software-product business idea, and publishes it as a post on a static blog
+served by GitHub Pages.
 
 That is the whole scope. It does not build anything, spend anything, or contact
 anyone.
+
+Ideas should be self-service software products an AI coding agent could build:
+apps, SaaS, web tools, or ad-supported websites. The deployed software serves
+users; the AI's role is building and maintaining it. Each proposal covers the
+product workflow, a realistic first version, how users discover it, and its
+revenue model. AI features are optional. Managed services and agents hired to
+carry out customer requests are outside the scope. Existing posts may reflect
+an earlier focus on agent-operated services.
 
 ## How a run works
 
@@ -45,6 +54,56 @@ nobody listed is the better outcome.
   Task Scheduler cannot answer a login prompt, so an unauthenticated CLI means
   every scheduled run fails.
 
+## Linux quick start
+
+The Linux runner uses Bash, `flock` (util-linux), and GNU `timeout`, alongside
+Node.js, Git, and Codex. These commands are installed on this machine, and its
+cron service is active. Complete your Codex login and configure Git identity
+and noninteractive remote authentication before an unattended run.
+
+Commit or stash changes in `posts/`, `docs/`, and `IDEAS.md` first. Unrelated
+code changes may remain uncommitted and are excluded from the publication commit.
+From the repository directory:
+
+```bash
+./run-agent.sh --no-push                 # research, build, and commit locally
+./run-agent.sh --slot evening            # full run, including push
+./run-agent.sh --model gpt-5.6-terra
+./run-agent.sh --timeout-minutes 45
+```
+
+Install three daily cron jobs as your normal user (no sudo):
+
+```bash
+./setup-schedule.sh                      # 09:00, 15:00, and 21:00
+./setup-schedule.sh --morning-time 07:30 --afternoon-time 13:30 --evening-time 19:00
+crontab -l
+```
+
+Times use the cron daemon's timezone. The installer captures your current PATH
+so cron can find user-installed Codex and Node; rerun it if their locations
+change. It replaces only the marked bonnie-agent block and preserves other
+jobs. Unlike Windows tasks, cron runs while you are logged out, but misses runs
+while the machine is off or asleep. The cron service must be running.
+
+```bash
+touch STOP                              # pause
+rm STOP                                 # resume
+./setup-schedule.sh --unregister         # remove the three jobs
+node scripts/build.mjs                   # rebuild without running the agent
+xdg-open docs/index.html                 # optional, requires a desktop
+```
+
+Logs are in `logs/YYYY-MM-DD-slot.log`, with `.agent.out` and `.agent.err`
+for the agent transcript. Cron also writes to `logs/scheduler.log`.
+Linux runs stop on pull failure, agent failure, timeout, or a missing/rejected
+post. They stage only the new post, `docs/`, and `IDEAS.md`. A failed push leaves
+the commit local. The `.agent.lock` file stays on disk; the operating system
+releases its lock when the process exits, so do not delete it during a run.
+
+The GitHub repository and Pages setup below applies on both platforms; the
+PowerShell commands are retained for Windows users.
+
 ## Setup
 
 **1. Commit and push the repo.** Create an empty repository on GitHub first,
@@ -63,19 +122,23 @@ deployment → Deploy from a branch**, then select branch `main` and folder
 **`/docs`**. Your blog appears at `https://<you>.github.io/<repo>/` within a
 minute or two.
 
-**3. Schedule the two daily runs.**
+**3. Schedule the three daily runs.**
 
 ```powershell
-.\setup-schedule.ps1                                  # 09:00 and 21:00
-.\setup-schedule.ps1 -MorningTime 07:30 -EveningTime 19:00
+.\setup-schedule.ps1                                  # 09:00, 15:00, and 21:00
+.\setup-schedule.ps1 -MorningTime 07:30 -AfternoonTime 13:30 -EveningTime 19:00
 ```
 
-This registers `bonnie-agent-morning` and `bonnie-agent-evening`. Re-run it any
+This registers `bonnie-agent-morning`, `bonnie-agent-afternoon`, and
+`bonnie-agent-evening`. Re-run it any
 time to change the times. The tasks run as you, with an interactive logon,
 because the CLI uses your own `codex` credentials — they will not fire while
 nobody is logged in.
 
 ## Running it yourself
+
+Both runners default to `gpt-6-astra`. Use `--model` on Linux or `-Model` on
+Windows to override it for a run. Scheduled runs use the same default.
 
 ```powershell
 .\run-agent.ps1                      # a full run right now
@@ -97,7 +160,7 @@ start docs\index.html
 ```powershell
 New-Item -ItemType File STOP         # scheduled runs exit immediately
 Remove-Item STOP                     # resume
-.\setup-schedule.ps1 -Unregister     # remove both scheduled tasks
+.\setup-schedule.ps1 -Unregister     # remove all three scheduled tasks
 ```
 
 `STOP` is gitignored, so pausing your machine does not pause anyone else's.
@@ -111,8 +174,8 @@ Remove-Item STOP                     # resume
 | `scripts/build.mjs` | Static site generator. Zero dependencies, no `npm install`. |
 | `docs/` | Generated site, committed because Pages serves it. Safe to delete and rebuild. |
 | `IDEAS.md` | Generated ledger of past ideas. The agent reads it to avoid repeating itself. |
-| `run-agent.ps1` | One run, end to end. |
-| `setup-schedule.ps1` | Registers/removes the two scheduled tasks. |
+| `run-agent.sh` / `run-agent.ps1` | One run, end to end (Linux / Windows). |
+| `setup-schedule.sh` / `setup-schedule.ps1` | Registers/removes cron jobs or Windows tasks. |
 | `logs/` | Per-run logs plus raw agent output. Gitignored. |
 
 `docs/` and `IDEAS.md` are rebuilt from `posts/` on every run, so `posts/` is the

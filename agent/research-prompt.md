@@ -1,4 +1,4 @@
-# Run instructions: research and propose one AI-operated business idea
+# Run instructions: research and propose one software-product business idea
 
 You are running unattended. Nobody will answer a question, so do not ask one.
 Work through the phases below in order and finish by writing exactly one file.
@@ -17,11 +17,25 @@ Budget: roughly **10 minutes of real research** before you start writing. The
 depth requirements below are what fill that time. Do not pad, stall, or sleep to
 reach it — but do not shortcut it either.
 
-The target is not merely a small business that uses AI. It is a business that
-an AI agent can **build, operate, and support** after the owner sets the goals
-and grants the necessary access. The agent should be able to complete at least
-80% of recurring customer work without human judgment. Humans may approve
-high-stakes actions and handle rare exceptions, but they must not be the product.
+The target is a **software product that an AI coding agent can build end to end**
+for one owner: a web app, mobile app, SaaS, website funded by ads, browser
+extension, game, or another small digital product. Customers discover and use
+the deployed software; the software delivers the value. The AI agent is the
+builder and can help maintain the code. It is not the service sold to customers.
+
+For example, a customer uploads a PDF or picture to a web app, the app hosts it
+and creates a QR code linking to it, and the customer pays for useful hosting or
+sharing features. This illustrates the product model, not a validated business
+opportunity or a category to keep proposing. Research demand and competition
+independently for every idea.
+
+The product does not need AI features. Ordinary code, scheduled jobs, and APIs
+are welcome. An AI API may be a bounded feature if justified by user value and
+cost, but do not propose an agent-for-hire, managed service, consulting business,
+or a business requiring a general-purpose agent to work through each customer's
+request. Once deployed, normal use must work while the coding agent is offline.
+The owner may handle business decisions, account setup, and occasional support.
+This run only researches and proposes the product; it does not build it.
 
 ---
 
@@ -34,19 +48,18 @@ high-stakes actions and handle rare exceptions, but they must not be the product
 3. Choose a different direction. Some categories, purely to get you moving:
 
    SaaS · ad-supported web tool · mobile app · game · browser extension ·
-   digital marketplace · API / developer tool · newsletter or media · automated
-   digital service · plugin for an existing platform · data product · community ·
-   B2B internal tooling · education
+   digital marketplace · API / developer tool · ad-supported reference website ·
+   plugin for an existing platform · data product · self-service education tool
 
    **This list is a prompt, not a taxonomy.** It is deliberately incomplete.
    Categories nobody in this repo has thought of yet are the most interesting
    ones. If your research points somewhere that fits none of these labels, invent
    the label and use it.
 
-4. Stay in directions where the paid result can plausibly be produced and
-   checked through software, APIs, browser actions, files, or messages. A human
-   expert doing the important work while an agent schedules or formats it is not
-   an AI-operated business.
+4. Stay in directions where users get value from a reusable, deployed software
+   product through a self-service interface. Screen for a first version that one
+   owner and an AI coding agent can realistically build and launch with a small
+   budget. A managed service remains out of scope even if AI does all the labour.
 5. Do not pre-select the idea. You are picking a *direction to search in*, not an
    answer. The idea has to come out of Phase 1, not out of your priors.
 
@@ -66,8 +79,8 @@ Eight rewordings of one query does not count. Draw from framings like:
   to buy something?
 - Manual labour: what are people still doing by hand, in spreadsheets, or by
   copy-pasting between two tools?
-- Agent leverage: what repeatable digital job has clear inputs, a checkable
-  output, and a documented tool or API an agent could use?
+- Software opportunity: what task could users complete themselves with a small
+  app, a clear interface, and available libraries or APIs?
 - Support burden: which products have repetitive, diagnosable support requests
   rather than emergencies or cases requiring a licensed expert?
 - Abandonment: what popular tool was shut down, acquired, or left to rot, and
@@ -89,29 +102,34 @@ did not actually retrieve.
 
 From the signals, form **three** candidate ideas. For each, state:
 
-- who would pay and what concrete result they receive;
-- the routine loop the agent would perform from customer request to delivery;
-- what, if anything, still requires a human.
+- who uses the product, who pays (users or advertisers), and what value they get;
+- what users do in the software and what the deployed software does automatically;
+- what the AI coding agent must build, and what the owner must arrange to launch;
+- a plausible way the first users would discover it.
 
-Apply this **AI-operability gate** to every candidate. Reject it immediately if
-any of these are false:
+Apply this **software-product gate** to every candidate. Reject it if any of
+these are false:
 
-1. The agent can build and maintain the necessary software or automation.
-2. The agent can onboard a customer and obtain the required inputs through a
-   bounded, understandable process.
-3. The agent can perform the core paid work using available digital tools.
-4. The result can be checked objectively before it reaches the customer.
-5. Routine failures can be detected, retried, reversed, or safely escalated.
-6. Routine customer support can be handled from documentation and observable
-   system state.
-7. Human judgment is limited to rare exceptions, approvals, and strategy — not
-   required once per customer or for every deliverable.
-8. A mistake is unlikely to create unacceptable medical, legal, financial,
-   safety, privacy, or compliance harm.
+1. A coding agent can realistically build and test a useful first version for
+   one owner with a laptop and a few hundred dollars. Name difficult dependencies
+   instead of assuming the agent can solve anything.
+2. Users can sign up or open the product and get its core value without bespoke
+   setup, manual fulfilment, or an agent handling each customer's request.
+3. The deployed software delivers the core result while the coding agent is
+   offline. Any AI feature has a bounded role, costs, and failure handling.
+4. The product is reusable across customers, with an identifiable reason to use
+   or pay for it instead of a free tool or established competitor.
+5. Required data, libraries, APIs, and distribution channels are accessible on
+   terms that permit the proposed use and fit the budget.
+6. There is a specific, plausible acquisition channel for a solo owner. Do not
+   assume users appear because the product exists or because SEO is mentioned.
+7. Hosting, storage, API fees, payment fees, and ordinary support can plausibly
+   fit the revenue model without recurring custom service work.
+8. The product can be operated without specialist review of most customer results
+   or unacceptable consequences from routine errors.
 
-If fewer than three candidates pass, return to Phase 1 and keep searching. "An
-AI could help with this" is not enough; the AI must be able to run the ordinary
-delivery and support loop.
+If fewer than three candidates pass, return to Phase 1. Automating an agency
+with AI does not turn it into the self-service software business requested here.
 
 Then kill two of them. Good reasons to kill: the buyer has no budget, the
 incumbent gives it away free, it needs a network effect from a standing start, it
@@ -137,20 +155,23 @@ Before writing anything, you must have:
   search snippets.
 - A concrete answer to: what does the buyer do *today* instead, and what does
   that cost them in money or hours?
-- **A complete agent operating loop.** Describe the trigger, input, agent action,
-  tool or account used, customer-facing output, automatic quality check, delivery,
-  monitoring, and routine support path. Include how the agent maintains or
-  improves the implementation after launch.
-- **A concrete customer walkthrough.** Explain one ordinary use from the moment
-  a customer encounters the problem to the moment they receive the result. Use
-  plain actions and objects, not product-category language.
-- **An honest human-intervention estimate.** Name every human-only step and
-  estimate how often it occurs per ten customers or per month. If the core result
-  requires a specialist, certification, subjective review, or manual work for
-  most customers, reject the idea and deepen a different candidate.
-- **A failure and support plan.** State how the agent knows its work succeeded,
-  what common failure looks like, what it can repair itself, and the exact point
-  where it stops and alerts the owner.
+- **A concrete product workflow.** Describe the user interface, inputs,
+  software processing, output, and why the result is useful. Explain how an
+  ordinary user completes the workflow without the coding agent being involved.
+- **A realistic first-version build plan.** Name the essential screens, backend
+  jobs, storage, billing if needed, and external dependencies. Explain what the
+  coding agent would implement and test, the hardest technical uncertainty,
+  launch requirements, and what can wait. Distinguish a scoped build estimate
+  from proven feasibility; verify critical API or platform constraints.
+- **A concrete customer walkthrough.** Explain how someone discovers the product,
+  uses it, and gets value. Label hypothetical examples as hypothetical.
+- **A credible acquisition path.** Identify a specific search intent, app-store
+  niche, community, integration listing, or other channel, with evidence of
+  relevant users and a practical way to reach the first ten. Treat conversion
+  and traffic estimates as assumptions, not guaranteed demand.
+- **A maintenance and support plan.** State what the software checks and retries,
+  what failures reach the owner, and what code maintenance the AI can help with.
+  Reject ideas whose ordinary delivery depends on ongoing bespoke work.
 - **The load-bearing claim, verified.** Name the one factual claim the whole idea
   rests on — the deadline, the price, the rule, the volume, the shutdown. Then
   open and read a primary source for it: the vendor's own page, the regulator's own
@@ -171,8 +192,9 @@ the target; if you are well short of it, the gap is nearly always Phase 1 breadt
 Write one file: `posts/<YYYY-MM-DD>-<slot>-<slug>.md`
 
 - `<YYYY-MM-DD>` — today's date. Get it from the environment, do not guess.
-- `<slot>` — `morning` or `evening`, whichever the run passed you. If you were
-  not told, use `morning` before 15:00 local time and `evening` after.
+- `<slot>` — `morning`, `afternoon`, or `evening`, whichever the run passed you.
+  If not told, use `morning` before 12:00 local time, `afternoon` from 12:00
+  to before 18:00, and `evening` afterward.
 - `<slug>` — 2–5 lowercase words, hyphen-separated, no dates in it.
 
 ### Frontmatter — exact keys, exact order, no extras
@@ -205,8 +227,9 @@ terms where possible and define any unavoidable term immediately.
 ## A customer example
 
 Walk through one ordinary, explicitly hypothetical transaction. What happens to
-make the customer seek help? What do they submit or connect? What does the agent
-do? What do they receive, how long does it take, and what is better afterward?
+make the customer seek a tool? How do they find it? What do they click, upload,
+or connect? What does the software do? What do they receive, how long does it
+take, and what is better afterward?
 Use concrete objects and actions. Do not invent evidence or present the example
 as a real customer.
 
@@ -216,20 +239,22 @@ The specific person or business. Not "small businesses" — which small
 businesses, doing what, at what point in their week. What exact outcome are
 they buying.
 
-## How the AI agent runs it
+## What the AI agent would build
 
-Describe the complete recurring operating loop: onboarding, inputs, tools,
-production, automatic verification, delivery, monitoring, routine support, and
-maintenance. Distinguish software the agent builds from third-party services it
-uses. Make clear why an agent can perform the core work reliably rather than
-merely assist a human worker.
+Describe the smallest useful product: its essential screens, user workflow,
+backend processing, data storage, and payments or ads where relevant. Explain
+what the coding agent implements and tests, which existing services the software
+uses, and the hardest build risk. State what is excluded from version one.
+Make clear how the deployed product works without the coding agent online.
 
-## Where a human is still needed
+## Launch and ongoing maintenance
 
-List the decisions, approvals, or exceptions that still reach the owner and how
-often that should happen. Say who handles any legal, regulated, safety-critical,
-or subjective judgment. If a human would perform the core service, stop drafting,
-return to Phase 2, and choose a candidate that actually passes the gate.
+Name what the owner must arrange, such as hosting accounts, payment setup, or
+app-store submission. Describe ordinary software monitoring, support exceptions,
+and code maintenance the AI can help with. Give a specific route to the first ten
+users and evidence for why that audience can be reached. Do not assume discovery
+is automatic. If routine fulfilment needs an agent or bespoke work, return to
+Phase 2 and select a product that passes the software-product gate.
 
 ## Why now
 
@@ -246,8 +271,12 @@ more than a fake opportunity.
 
 ## How it makes money
 
-Pricing model and a number. One sentence of arithmetic showing what it takes to
-reach $1k/month: how many customers at what price.
+Pricing model and a number, clearly labelled as a proposal. Show the arithmetic
+for $1k/month in revenue: paying users at a price, or page views at an explicitly
+assumed ad revenue per thousand views. For ads, explain why that traffic is
+plausible; for paid products, explain the upgrade or purchase trigger. Estimate
+major running costs and distinguish revenue from profit. Do not present assumed
+conversion rates, ad yields, or demand as researched facts.
 
 ## The riskiest assumption
 
@@ -258,7 +287,7 @@ specific — "post X in Y community and see if Z happens", not "validate demand"
 ## What I rejected
 
 The two candidates you killed in Phase 2 and the one-line reason for each. Say
-whether each failed on demand or economics, or failed the AI-operability gate.
+whether each failed on demand or economics, or failed the software-product gate.
 
 ## The part I would argue against
 
@@ -281,11 +310,11 @@ told you.
   entirely in the title, tagline, `The idea`, and `A customer example` unless the
   acronym is more familiar than its expansion.
 - Prefer concrete descriptions: who clicks what, which file goes in, what the
-  agent checks or changes, what comes back, how success is measured, and what the
+  software checks or changes, what comes back, how success is measured, and what the
   customer pays. Explain the problem before naming its category.
 - Before finishing, apply the stranger test. A reader outside the industry must
   be able to answer: **Who has the problem? What happens today? What exactly does
-  the agent do and deliver?** If any answer is unclear, rewrite the opening.
+  the user do, and what does the software deliver?** If any answer is unclear, rewrite the opening.
 - **Never invent a URL, a statistic, a price, or a company.** If you did not
   retrieve it this run, it does not go in the post. A thin post built on real
   findings beats a rich post built on plausible-sounding fiction.
@@ -298,11 +327,11 @@ told you.
   throat-clearing about how AI is changing everything.
 - Write like a clear analyst explaining the opportunity to a curious outsider.
   Use short paragraphs and direct sentences. 800–1200 words in the body. Under
-  800 means you probably skipped the operating details; over 1200
+  800 means you probably skipped the product or build details; over 1200
   means you are padding.
 - Ideas that would need a large team, a licence, a warehouse, or millions in
   capital are out of scope. Assume the reader is one person with a laptop and a
-  few hundred dollars, using an AI agent as the primary builder and operator.
+  few hundred dollars, using an AI coding agent as the primary software builder.
 
 ---
 

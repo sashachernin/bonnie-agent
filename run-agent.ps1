@@ -3,7 +3,7 @@
     One research run: propose a business idea, publish it to the blog.
 
 .DESCRIPTION
-    Invoked twice a day by Windows Task Scheduler (see setup-schedule.ps1), or
+    Invoked three times a day by Windows Task Scheduler (see setup-schedule.ps1), or
     by hand for a one-off run. Each run:
 
       1. bails out if STOP exists or another run is still going
@@ -15,10 +15,10 @@
     A run that produces no post commits nothing and exits non-zero.
 
 .PARAMETER Slot
-    morning or evening. Defaults to morning before 15:00, evening after.
+    morning, afternoon, or evening. Defaults change at 12:00 and 18:00.
 
 .PARAMETER Model
-    Model passed to the CLI. Default: gpt-5.6-sol.
+    Model passed to the CLI. Default: gpt-6-astra.
 
 .PARAMETER TimeoutMinutes
     Hard kill for the research step. Default: 30.
@@ -33,9 +33,9 @@
 
 [CmdletBinding()]
 param(
-    [ValidateSet('morning', 'evening')]
+    [ValidateSet('morning', 'afternoon', 'evening')]
     [string] $Slot,
-    [string] $Model = 'gpt-5.6-sol',
+    [string] $Model = 'gpt-6-astra',
     [int]    $TimeoutMinutes = 30,
     [switch] $NoPush
 )
@@ -49,7 +49,9 @@ $Posts = Join-Path $Repo 'posts'
 $LogDir = Join-Path $Repo 'logs'
 
 if (-not $Slot) {
-    if ((Get-Date).Hour -lt 15) { $Slot = 'morning' } else { $Slot = 'evening' }
+    if ((Get-Date).Hour -lt 12) { $Slot = 'morning' }
+    elseif ((Get-Date).Hour -lt 18) { $Slot = 'afternoon' }
+    else { $Slot = 'evening' }
 }
 
 New-Item -ItemType Directory -Force -Path $LogDir, $Posts | Out-Null

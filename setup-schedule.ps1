@@ -1,9 +1,10 @@
 <#
 .SYNOPSIS
-    Registers (or removes) the two daily Windows scheduled tasks that run the agent.
+    Registers (or removes) the three daily Windows scheduled tasks that run the agent.
 
 .DESCRIPTION
-    Creates two tasks, bonnie-agent-morning and bonnie-agent-evening, each
+    Creates three tasks, bonnie-agent-morning, bonnie-agent-afternoon, and
+    bonnie-agent-evening, each
     running run-agent.ps1 with the matching -Slot. Re-running this script
     overwrites the existing tasks, so it is safe to run again after changing
     the times.
@@ -15,11 +16,14 @@
 .PARAMETER MorningTime
     24-hour HH:mm for the first run. Default 09:00.
 
+.PARAMETER AfternoonTime
+    24-hour HH:mm for the second run. Default 15:00.
+
 .PARAMETER EveningTime
-    24-hour HH:mm for the second run. Default 21:00.
+    24-hour HH:mm for the third run. Default 21:00.
 
 .PARAMETER Unregister
-    Remove both tasks instead of creating them.
+    Remove all three tasks instead of creating them.
 
 .EXAMPLE
     .\setup-schedule.ps1
@@ -30,6 +34,7 @@
 [CmdletBinding()]
 param(
     [string] $MorningTime = '09:00',
+    [string] $AfternoonTime = '15:00',
     [string] $EveningTime = '21:00',
     [switch] $Unregister
 )
@@ -38,7 +43,7 @@ $ErrorActionPreference = 'Stop'
 
 $Repo = $PSScriptRoot
 $Script = Join-Path $Repo 'run-agent.ps1'
-$Tasks = @{ morning = $MorningTime; evening = $EveningTime }
+$Tasks = @{ morning = $MorningTime; afternoon = $AfternoonTime; evening = $EveningTime }
 
 if ($Unregister) {
     foreach ($slot in $Tasks.Keys) {
@@ -67,7 +72,7 @@ $settings = New-ScheduledTaskSettingsSet `
     -MultipleInstances IgnoreNew `
     -ExecutionTimeLimit (New-TimeSpan -Hours 1)
 
-foreach ($slot in @('morning', 'evening')) {
+foreach ($slot in @('morning', 'afternoon', 'evening')) {
     $time = $Tasks[$slot]
     try { $at = [datetime]::ParseExact($time, 'HH:mm', $null) }
     catch { throw "Could not read '$time' as a 24-hour HH:mm time." }
