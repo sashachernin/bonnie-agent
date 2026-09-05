@@ -5,4 +5,5 @@
 Newest first. The research agent reads this at the start of every run so it does
 not repeat a category it has just used.
 
+- **2026-09-05** · `SaaS` · **Prepare Supplier Orders Without Retyping** — Shopify gift-shop buyers turn one restock list into checked supplier spreadsheets and matching Shopify order files (`2026-09-05-afternoon-supplier-order-prep.md`)
 - **2026-09-05** · `browser-based craft tool` · **Make Sewing Patterns Fit the Printer** — Home sewists rearrange oversized pattern files onto printable sheets without changing the garment size (`2026-09-05-morning-sewing-pattern-layout.md`)
