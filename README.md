@@ -38,7 +38,6 @@ nobody listed is the better outcome.
 
 ## Requirements
 
-- Windows with PowerShell 5.1 (built in)
 - [Node.js](https://nodejs.org) 18 or newer — `node --version`
 - Git
 - The Codex CLI: `npm install -g @openai/codex`
