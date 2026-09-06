@@ -1,8 +1,11 @@
 # Run instructions: research and propose one software-product business idea
 
 You are running unattended. Nobody will answer questions. Research an opportunity
-on the web, then write exactly one markdown file in `posts/`. Do not build the
-product or modify any other repository file. `IDEAS.md` and `docs/` are generated.
+on the web and deliver one promising business idea worth testing, written as one
+markdown file in `posts/`. A rejected candidate is not a deliverable. If research
+is exhausted without a qualifying idea, follow the unsuccessful-run instructions
+below and write no post. Do not build the product or modify any other repository
+file. `IDEAS.md` and `docs/` are generated.
 
 This repository is only the output destination, not the research subject. Read
 `IDEAS.md` for prior ideas; otherwise open only the post you are writing. Do not
@@ -14,7 +17,7 @@ build and everything after you write the post.
 Find a reusable, self-service software product that one owner with a laptop, a
 few hundred dollars, and an AI coding agent could realistically build and launch.
 Web apps, mobile apps, games, extensions, developer tools, educational products,
-and ad-supported websites are all welcome. The coding agent builds and helps
+ad-supported websites, and affiliate discovery or comparison sites are all welcome. The coding agent builds and helps
 maintain the software; the deployed software delivers customer value while the
 agent is offline. Ordinary code and APIs are sufficient. AI features are optional
 and must have a bounded role, affordable costs, and failure handling.
@@ -40,13 +43,18 @@ or stall to reach a duration. Use the time for breadth first, then verification 
 the strongest candidate. The minimum research is **eight genuinely different web
 searches** and **three primary pages opened and read beyond search snippets**.
 
-Accuracy and honest rejection take priority over finding a publishable winner.
-Within the budget, prioritize independent demand evidence, existing alternatives
-and prices, the claim the idea depends on, and critical feasibility constraints.
-Then deepen acquisition and economics. If the minimum research takes longer than
-expected, finish it, but do not restart the whole process to fill a shortlist.
-Disclose remaining gaps rather than inventing facts or treating assumptions as
-verified. A rejected opportunity is an acceptable result.
+The goal is a credible opportunity worth a cheap validation test, not a proven
+business and not a completed research checklist. Prioritize the strength of the
+customer benefit, a supported reason to choose the product, and a believable
+route to customers before polishing build plans or revenue arithmetic. Sources,
+competitor counts, and easy implementation cannot compensate for a weak business.
+
+Use the approximate ten-minute budget for active investigation. Search minimums
+are a floor, not a stopping condition. If the first shortlist fails early, spend
+the remaining budget exploring different needs and testing new candidates; do not
+spend it writing up a rejection. Do not sleep or pad research. A strong candidate
+may be ready sooner once its important claims and alternatives are checked.
+Never invent evidence or lower the quality bar to meet the publication target.
 
 ## Phase 0 — Choose a fresh direction
 
@@ -66,15 +74,30 @@ least **three substantially different audiences or everyday needs** before
 narrowing. Rewordings of one query do not count. Include at least two searches
 about common recurring needs, popular uses, or reasons people already pay for or
 repeatedly use products, rather than only complaints about missing features.
+Include at least one search for established, feasible business models where a
+new entrant could earn a share of existing demand. This can overlap those two
+searches; novelty and unmet needs are not prerequisites.
 
 Useful framings include:
 
+- Existing businesses whose core offering is straightforward to reproduce and
+  whose market can support multiple similar providers. Investigate how another
+  entrant could reach customers through search queries, language, geography,
+  curation, communities, or another accessible channel, even when competitors
+  already serve that same audience. Do not assume the segment must be unserved.
 - Recurring things people want to create, learn, organize, enjoy, or share.
 - Frustrations with existing products, price increases, or lost free features.
 - Popular tools that shut down or stopped being maintained.
 - New platform capabilities or upcoming regulatory deadlines.
 - Repetitive manual work that a small self-service app could handle.
 - Common needs in sizable professions, hobbies, or consumer groups.
+
+For example, an affiliate product-discovery site serving local-language shopping
+searches may be worth investigating even if similar sites already target the
+same country. Its case would rest on useful discovery, attainable traffic, and
+commission economics, not an invented feature advantage. This illustrates a
+search framing, not a preferred category or a verified earnings claim. Look for
+evidence that an entrant can participate; easy replication alone is insufficient.
 
 Prefer direct evidence: user discussions, reviews, issue trackers, pricing pages,
 changelogs, and documentation. Avoid business-idea listicles. Record URLs as you
@@ -91,6 +114,23 @@ For each, identify the user and payer, core workflow, build and launch needs,
 likely acquisition channel, recurrence, and conditions that limit the audience.
 Separate actual constraints from incidental details of an illustrative example.
 
+Before developing a build plan, make the business case for each candidate:
+
+- What worthwhile outcome does the user get, and what do they do today? Identify
+  material effort saved, money earned or saved, or a concrete desire fulfilled.
+- Why would reachable users use this product? Either support a meaningful
+  product advantage or show a plausible way to capture some existing demand
+  with a comparable offering. Users may discover and use a useful site without
+  switching from a competitor. Tie the case to observed needs and distribution
+  evidence; “simpler,” “cheaper,” “AI-powered,” or “there is room” alone is not a case.
+- Where can the owner reach those users, and why could acquisition and ordinary
+  support fit the price? Naming SEO, social media, or a community is insufficient
+  without relevant audience evidence and a practical way to gain attention.
+
+Discard weak business cases before researching detailed implementation. Do not
+rescue a trivial benefit with a long feature list, speculative roadmap, or an
+increasingly narrow audience.
+
 ### Software-product gate
 
 Reject a candidate if any of these requirements fails. For the likely winner,
@@ -100,8 +140,11 @@ verify critical dependencies rather than assuming the coding agent can solve the
    above, without a large team, specialist licence, or major capital investment.
 2. Required data, libraries, APIs, and distribution channels are accessible on
    terms permitting the intended use and fit the budget.
-3. Users have a concrete reason to adopt or pay instead of using a free tool,
-   established competitor, or simple habit change.
+3. Users get worthwhile value and have a concrete reason to use or pay for the
+   product when they encounter it. Either a supported product advantage or a
+   credible route to a share of existing demand can qualify. Feature uniqueness
+   and switching from an incumbent are not required. For free sites, distinguish
+   the user's benefit from the advertiser's or affiliate merchant's payment.
 4. A solo owner has a specific, plausible way to reach users.
 5. Hosting, storage, API fees, payments, and ordinary support fit the proposed
    revenue model; routine errors do not have unacceptable consequences.
@@ -117,23 +160,50 @@ Evaluate the strongest candidates against these criteria:
   or active communities supports a substantial relevant audience. Explain its
   limits. A platform's total user count does not establish demand for a rare
   workflow within it. Do not invent market-size estimates.
-- **Standalone value:** The outcome justifies adopting a separate product. A minor
-  import, export, naming, or interface difference needs evidence that it materially
-  affects adoption or payment. Existing competition is acceptable.
+- **Standalone value:** The outcome justifies using the product or visiting the
+  site. Evaluate either a differentiated offering or a useful comparable offering
+  with credible distribution. A minor feature difference is not automatically a
+  business advantage, but lack of feature differences is not a rejection reason.
+  For established categories, examine evidence of demand across multiple providers
+  and a practical entry route. Competitor existence alone proves neither room for
+  another entrant nor saturation. Do not require an unserved audience or a moat.
 - **Repeatable growth:** The same first version can help customers beyond the
   first ten without bespoke work or a much larger build. Prefer recurring use;
   episodic products need a credible continuing supply of new users.
 
-Choose the candidate with the strongest combination of demand, value, reachable
-breadth, and feasibility. Keep the two rejection reasons for the post, identifying
-whether they concern demand, economics, or the software-product gate. Do not keep
-searching merely to find three passing candidates.
+Distinguish a failed requirement from an untested hypothesis. An inaccessible
+required API or an advantage contradicted by existing products can defeat an
+idea. Unknown conversion rates or willingness to pay at an exact proposed price
+usually call for a validation test. Competition can demonstrate demand; it is not
+by itself grounds for rejection. Conversely, a complaint alone does not prove
+people want a separate product. Do not require proven sales, an uncontested
+market, or guaranteed growth before recommending a test.
 
-If no candidate passes, broaden the search once if time remains. If none still
-passes, document the best-researched candidate as an **explicitly rejected
-opportunity** using the same output format. State upfront that no candidate
-cleared the bar; label its workflow, build plan, and economics as hypothetical.
-Do not endorse a weak idea just because a post is required.
+Choose a candidate only when it has a positive, evidence-backed business case,
+not merely because it is the least weak of three. Keep two meaningful rejected
+alternatives and their reasons for the post. You need one promising candidate,
+not three passing candidates.
+
+### If the shortlist fails
+
+Reject the candidates and return to discovery. Identify what failed and change
+the search direction accordingly: a trivial benefit calls for more consequential
+needs; direct substitutes without a product advantage call for checking whether
+credible distribution supports a comparable offering, then changing direction if not; inaccessible customers call for audiences with practical distribution.
+Do not just reword queries or add features to the same rejected idea.
+
+Before declaring the run unsuccessful, complete at least two additional search
+rounds beyond the first shortlist. Each round must explore a different need or
+audience, use at least two genuinely new searches, and assess at least one new
+candidate against the gates. Stop these rounds early only if a candidate passes;
+otherwise continue useful investigation within the approximate research budget.
+Complete these minimum rounds even if they take modestly longer than the target.
+
+If no candidate qualifies after that effort, write no file in `posts/`. Return a
+concise final message beginning `NO_PUBLISHABLE_IDEA`, stating the directions
+explored, the concrete reasons they failed, and any unresolved research limits.
+This is an unsuccessful run, not a business idea or a completed daily proposal.
+Do not fabricate a winner or write a hypothetical business plan for a rejection.
 
 ## Phase 3 — Verify the selected opportunity
 
@@ -150,18 +220,30 @@ sections below. Focus additional research on these checks:
 - Identify and verify the **load-bearing factual claim**: the price, rule,
   capability, shutdown, or other fact the opportunity depends on. Read the
   vendor's, regulator's, or other original source. If verification fails, say
-  exactly what remains unverified and make it the reader's first check.
+  exactly what remains unverified. If the business case requires that fact to be
+  true, resolve it before publishing or return to candidate selection.
 - Verify critical API or platform restrictions. Scope the smallest useful build,
   its hardest technical uncertainty, and launch dependencies. A build estimate
   is not proof of feasibility.
+- For affiliate models, verify program eligibility, applicable commission rates,
+  attribution conditions, and access to permitted product data from official
+  sources. For search-led distribution, inspect relevant queries and competing
+  results in the proposed language or region. Identify a concrete entry route;
+  do not infer attainable rankings from keyword existence or competitor revenue.
 - Ground acquisition in a specific channel with evidence of relevant users and
   a practical route to the first ten. Treat traffic, conversion, and ad yields
   as assumptions. Estimate major running costs and ordinary support needs.
 
 Missing evidence must remain visible in the post. If new findings defeat a gate,
-select another already-researched candidate that passes or publish a rejection.
+select another already-researched candidate that passes or return to discovery
+under the shortlist-failure rules. Never publish the defeated candidate.
 
 ## Phase 4 — Write the post
+
+Only write after the selected candidate passes the gates and verification. Be
+able to say why this opportunity deserves a test despite its specific remaining
+risk, with evidence supporting the benefit, adoption reason, and reachable users.
+If your conclusion is “do not pursue this,” return to selection instead of drafting.
 
 Write `posts/<YYYY-MM-DD>-<slot>-<slug>.md`:
 
@@ -234,21 +316,29 @@ is automatic.
 
 The signals from Phase 1, with inline links to the real pages. What changed
 recently that makes this a better idea this month than it was last year. If
-nothing changed and this is simply an old unmet need, say that plainly.
+nothing changed, say that plainly. An established, already-served need can still
+support a viable entrant; explain the present entry route without inventing a
+recent catalyst or claiming the need is unmet.
 
 ## What exists today
 
 Your three-plus competitors or substitutes, named, with prices. What each does
-well and where the gap is. If the honest answer is "an incumbent already does
-this well and cheaply", write that — a killed idea documented properly is worth
-more than a fake opportunity.
+well and how this business could win users through product value or distribution.
+For a comparable offering, explain how it could attract a share of demand without
+requiring users to switch, and what supports that entry route. Acknowledge where
+incumbents are better. Return to selection if neither the product case nor the
+distribution case holds; similarity alone is not grounds for rejection.
 
 ## How it makes money
 
 Pricing model and a number, clearly labelled as a proposal. Show the arithmetic
 for $1k/month in revenue: paying users at a price, or page views at an explicitly
-assumed ad revenue per thousand views. For ads, explain why that traffic is
-plausible; for paid products, explain the upgrade or purchase trigger. Estimate
+assumed ad revenue per thousand views. For affiliate sites, show visits × outbound
+click rate × merchant conversion rate × average eligible order value × commission
+rate, distinguishing verified program terms from assumptions and allowing for
+ineligible or reversed orders. Explain the required traffic and why acquiring it
+is plausible for ad and affiliate models; for paid products, explain the upgrade
+or purchase trigger. Estimate
 major running costs and distinguish revenue from profit. Do not present assumed
 conversion rates, ad yields, or demand as researched facts. The $1k calculation
 is a first milestone, not evidence of a market or the intended ceiling. Connect
@@ -270,7 +360,10 @@ whether each failed on demand or economics, or failed the software-product gate.
 
 The strongest case against your own idea. Not a hedge and not a list of generic
 risks — the argument a sceptical reader would actually make, put as well as they
-would put it.
+would put it. Explain briefly why the evidence still makes a cheap validation test
+worthwhile, and which result would make you abandon the idea. Do not manufacture
+an upbeat rebuttal: if the objection already defeats the business case, discard
+the candidate before publication.
 
 ## Sources
 
@@ -298,7 +391,10 @@ Before finishing, check:
   does, and what the software delivers.
 - Sources support factual claims; proposed prices, estimates, and hypothetical
   examples are clearly labelled. Weak or missing evidence is stated plainly.
-- The strongest argument against the idea is specific and candid.
+- The post recommends a worthwhile test of a supported opportunity, rather than
+  presenting a rejected idea or merely an app that can be built.
+- The strongest argument against the idea is specific and candid; no known
+  finding in the post already defeats the stated reason to pursue it.
 - The filename, frontmatter, and twelve headings match the required format.
 
 When the file is written, stop. Do not run builds or git, summarize the post in
