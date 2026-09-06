@@ -5,6 +5,7 @@
 Newest first. The research agent reads this at the start of every run so it does
 not repeat a category it has just used.
 
+- **2026-09-06** · `rental compliance software` · **Build Deposit Photo Packets** — California rental owners turn inspection photos and receipts into a clear security-deposit packet (`2026-09-06-evening-deposit-photo-packets.md`)
 - **2026-09-06** · `family organization software` · **Turn School Emails Into Family Plans** — Parents forward school messages and receive checked calendar events and action lists (`2026-09-06-afternoon-school-email-calendar.md`)
 - **2026-09-06** · `worker pay software` · **Check Every Nursing Paycheck** — Nurses compare timecards with paystubs and get a clear list of missing hours, premiums, and overtime (`2026-09-06-afternoon-check-nurse-pay.md`)
 - **2026-09-06** · `procurement alert app` · **Find Obsolete Parts Before Other Buyers** — Repair shops import wanted part numbers and get fast alerts when affordable replacements appear on eBay (`2026-09-06-morning-parts-hunt-board.md`)

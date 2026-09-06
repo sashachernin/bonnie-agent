@@ -1,0 +1,74 @@
+---
+title: Build Deposit Photo Packets
+slug: deposit-photo-packets
+date: 2026-09-06
+slot: evening
+category: rental compliance software
+tagline: California rental owners turn inspection photos and receipts into a clear security-deposit packet
+---
+
+## The idea
+
+A small California rental owner has 21 days after a tenant leaves to return the deposit or explain deductions, and phone photos, receipts, and notes are easy to mismatch. This web app guides the owner through the required photo stages, keeps each damaged item with its evidence, and exports one tenant-ready packet. It does not decide what may legally be deducted or give legal advice. The first version sells a repeatable documentation workflow, not legal judgment.
+
+## A customer example
+
+Hypothetically, Maya owns a four-unit building and finds a broken bedroom blind after a tenant leaves. She finds the app through an “AB 2801 photo checklist” page, creates the unit, and uploads the move-in image, move-out damage image, post-repair image, and receipt under “Bedroom blind.” The app preserves the originals, records upload and capture metadata when available, and flags that the three stages are present. In about 15 minutes Maya downloads a PDF with an evidence index and a private link to the original files, instead of naming and placing dozens of photos by hand.
+
+## Who pays, and for what
+
+The initial payer is a California owner or manager with roughly one to 50 units who makes security-deposit deductions but lacks enterprise inspection software. They pay to avoid clerical mistakes and turn scattered evidence into a readable packet before the deadline. California’s Department of Real Estate says landlords must take pre-repair and post-repair photos for deductions and, for tenancies beginning on or after July 1, 2025, move-in photos; it also describes the 21-day return and itemization process ([state guidance](https://www.dre.ca.gov/publications/ResourceGuidebook/gb10_movingout.html)). A recent landlord discussion shows the concrete workaround—printing several photos per sheet—and advice to label every image by room, item, and stage ([discussion](https://www.reddit.com/r/Landlord/comments/1vjpsy0/landlordusca_ab_2801_photo_requirements_after/)).
+
+The same version serves larger California managers, but integrations are excluded initially. Need recurs at each turnover where deductions are contemplated, not monthly for every unit. The audience is substantial but bounded: the California Rental Housing Association says its 14,000 members represent more than 805,000 units, including small owners ([membership page](https://www.cal-rha.org/membership-information)). That is association-reported reach, not proof that all need or will buy this product.
+
+## What the AI agent would build
+
+Version one is a responsive web app with a property list, guided inspection/upload screen, deduction-item editor, evidence completeness check, and PDF/export screen. Each item holds notes, amounts entered by the owner, photos grouped as move-in, move-out, and post-work, plus receipts. A small backend creates signed upload URLs, stores encrypted files, calculates file hashes, generates PDFs, and records an audit log. Stripe sells report credits.
+
+The coding agent can implement browser camera capture, resumable uploads, metadata extraction, PDF generation, access controls, retention controls, and automated tests. No artificial intelligence is needed. The hardest risk is reliable large-photo upload on weak mobile connections while preserving originals; test that on real iPhones and Android phones before launch. Version one excludes damage recognition, legal conclusions, accounting integrations, electronic signatures, and other states.
+
+## Launch and ongoing maintenance
+
+The owner arranges a domain, managed database, object storage, transactional email, Stripe, privacy terms, and a lawyer-reviewed disclaimer and data-retention policy. Monitoring should cover failed uploads, PDF jobs, expiring links, storage growth, and email delivery. Support is limited to failed payments, access recovery, and corrupted or incomplete exports; the app never answers whether a deduction is lawful.
+
+For the first ten users, publish a free, printable AB 2801 photo-stage checklist, then personally demonstrate the workflow to 30 small owners found through local rental-owner events and public property-manager listings. Apply as a supplier only after interviews; CalRHA lists nine local affiliates and explicitly invites supplier partners, while the Apartment Owners Association says it reaches more than 20,000 housing providers ([AOA](https://aoausa.com/about-the-apartment-owners-association-of-california-aoa/)). Access is real, but placements and response rates remain unverified.
+
+## Why now
+
+The catalyst is concrete, though not brand-new this month. California’s photo rules took effect in stages during 2025, and current state guidance says move-in photographs are required for tenancies starting July 1, 2025 and before/after-work photographs are required when making deductions ([Department of Real Estate](https://www.dre.ca.gov/publications/ResourceGuidebook/gb10_movingout.html)). Owners are now encountering the workflow during actual turnovers; a landlord asked how to organize the required photos just four weeks ago ([thread](https://www.reddit.com/r/Landlord/comments/1vjpsy0/landlordusca_ab_2801_photo_requirements_after/)). Several focused products already exist, so the need is not unmet. The opening is a low-commitment, California-specific pay-per-packet tool marketed through the associations and searches owners already use.
+
+## What exists today
+
+[RentCheck](https://www.getrentcheck.com/plan-pricing) starts at $1 per unit per month and provides unlimited inspections, templates, timestamped media, comparisons, integrations, and team support. It is better for managers wanting an ongoing system. [Amavera](https://amavera.app/) charges $30 for one report or $21–$27 each in landlord bundles; it already offers guided capture, sealed reports, comparisons, and California documents, making it the closest and strongest substitute. [Chapps Rental Inspector](https://www.rentalinspectionapp.com/) lists $3.60–$10 per inspection plus a displayed $260-per-user annual charge for its United States Pro plan; it is mature, offline-capable, and international.
+
+This product would not beat their breadth. It would compete for owners who search specifically for the California deduction workflow, want no installation or annual platform commitment, and need evidence grouped by deduction rather than a general property inspection. That entry route is plausible, not proven; Amavera in particular may already satisfy it well.
+
+## How it makes money
+
+Proposed pricing is $12 for one finalized packet, $49 for five credits, with the free checklist and one watermarked sample. The purchase trigger is an imminent turnover and a possible deduction. At $12, reaching $1,000 monthly revenue requires 84 full-price packets ($1,008); that is revenue, not profit. Continuing acquisition would combine state-specific search pages, local-association demonstrations, and referrals from bookkeepers or small property managers rather than requiring a subscription conversion.
+
+Estimated early monthly costs are $25–$60 for hosting, database, email, and monitoring, plus storage/egress that rises with photos and Stripe transaction fees. At an assumed 150 photos averaging 3 MB, one packet stores about 450 MB; a retention limit and customer export are essential. Support time and legal review are not included in those infrastructure estimates. Eighty-four monthly turnovers is an untested acquisition target, not a market fact.
+
+## The riskiest assumption
+
+Small owners will pay $12 for organization they can reproduce with folders, a document template, and care. The cheapest one-week falsification test is a one-page mockup and sample PDF shown in five local California landlord groups or events, with a button to reserve a free first packet. Contact 30 owners who recently handled a turnover; abandon or reposition if fewer than five agree to upload a real upcoming case and fewer than two say they would pay $12 for the next one.
+
+## What I rejected
+
+Shared pet-medication logging failed on acquisition economics: several nearly identical indie apps launched recently at roughly $20–$80 per year, with no credible low-cost route to displace free reminders.
+
+Band rehearsal readiness tracking failed on standalone value: BandHelper already combines shared repertoire, rehearsal tools, and group pricing, so a lighter status board did not provide a supported advantage or distribution case.
+
+## The part I would argue against
+
+This may be a short-lived compliance-feature market, not a business. Small owners can follow a checklist, sophisticated managers already buy suites, and Amavera directly offers California-ready pay-per-report documents. The evidence still supports a no-code price and workflow test because owners demonstrably pay per inspection and associations aggregate the exact buyers. I would abandon the idea if owner interviews consistently prefer a free template, or if the first 30 targeted contacts produce fewer than five real-case trials; adding more features would not fix absent willingness to pay.
+
+## Sources
+
+- https://www.dre.ca.gov/publications/ResourceGuidebook/gb10_movingout.html — current California photo, itemization, and timing guidance
+- https://www.reddit.com/r/Landlord/comments/1vjpsy0/landlordusca_ab_2801_photo_requirements_after/ — original owner discussion of printing and organizing evidence
+- https://www.getrentcheck.com/plan-pricing — RentCheck features and official unit pricing
+- https://amavera.app/ — guided report workflow and official per-report pricing
+- https://www.rentalinspectionapp.com/ — Chapps workflow, pricing, offline support, and retention terms
+- https://www.cal-rha.org/membership-information — California rental-owner association reach and affiliate channel
+- https://aoausa.com/about-the-apartment-owners-association-of-california-aoa/ — independent-owner audience and reported membership
