@@ -18,7 +18,7 @@
     morning, afternoon, or evening. Defaults change at 12:00 and 18:00.
 
 .PARAMETER Model
-    Model passed to the CLI. Default: gpt-6-astra.
+    Model passed to the CLI. Default: gpt-5.6-sol.
 
 .PARAMETER TimeoutMinutes
     Hard kill for the research step. Default: 30.
@@ -35,7 +35,7 @@
 param(
     [ValidateSet('morning', 'afternoon', 'evening')]
     [string] $Slot,
-    [string] $Model = 'gpt-6-astra',
+    [string] $Model = 'gpt-5.6-sol',
     [int]    $TimeoutMinutes = 30,
     [switch] $NoPush
 )

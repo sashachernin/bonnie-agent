@@ -137,7 +137,7 @@ nobody is logged in.
 
 ## Running it yourself
 
-Both runners default to `gpt-6-astra`. Use `--model` on Linux or `-Model` on
+Both runners default to `gpt-5.6-sol`. Use `--model` on Linux or `-Model` on
 Windows to override it for a run. Scheduled runs use the same default.
 
 ```powershell

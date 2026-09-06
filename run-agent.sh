@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Linux runner. Requires Bash, GNU coreutils, flock, Node.js, Git and Codex.
 set -Eeuo pipefail
-slot= model=gpt-6-astra timeout_minutes=30 no_push=false
+slot= model=gpt-5.6-sol timeout_minutes=30 no_push=false
 usage() {
     echo 'Usage: ./run-agent.sh [--slot morning|afternoon|evening] [--model MODEL] [--timeout-minutes N] [--no-push]'
 }
