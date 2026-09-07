@@ -6,9 +6,4 @@ Newest first. The research agent reads this at the start of every run so it does
 not repeat a category it has just used.
 
 - **2026-09-06** · `rental compliance software` · **Build Deposit Photo Packets** — California rental owners turn inspection photos and receipts into a clear security-deposit packet (`2026-09-06-evening-deposit-photo-packets.md`)
-- **2026-09-06** · `family organization software` · **Turn School Emails Into Family Plans** — Parents forward school messages and receive checked calendar events and action lists (`2026-09-06-afternoon-school-email-calendar.md`)
 - **2026-09-06** · `worker pay software` · **Check Every Nursing Paycheck** — Nurses compare timecards with paystubs and get a clear list of missing hours, premiums, and overtime (`2026-09-06-afternoon-check-nurse-pay.md`)
-- **2026-09-06** · `procurement alert app` · **Find Obsolete Parts Before Other Buyers** — Repair shops import wanted part numbers and get fast alerts when affordable replacements appear on eBay (`2026-09-06-morning-parts-hunt-board.md`)
-- **2026-09-05** · `plugin for an existing platform` · **Find the Originals Behind Client Picks** — Help portrait photographers turn renamed client selections into the original photos ready for retouching (`2026-09-05-evening-remember-photo-exports.md`)
-- **2026-09-05** · `SaaS` · **Prepare Supplier Orders Without Retyping** — Shopify gift-shop buyers turn one restock list into checked supplier spreadsheets and matching Shopify order files (`2026-09-05-afternoon-supplier-order-prep.md`)
-- **2026-09-05** · `browser-based craft tool` · **Make Sewing Patterns Fit the Printer** — Home sewists rearrange oversized pattern files onto printable sheets without changing the garment size (`2026-09-05-morning-sewing-pattern-layout.md`)
