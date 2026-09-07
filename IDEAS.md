@@ -5,6 +5,7 @@
 Newest first. The research agent reads this at the start of every run so it does
 not repeat a category it has just used.
 
+- **2026-09-07** · `youth sports coaching software` · **Keep the Bench Rotation Fair** — Volunteer coaches keep playing time fair across games without doing sideline arithmetic (`2026-09-07-evening-fair-bench-rotation.md`)
 - **2026-09-07** · `freelancer workflow software` · **Get Extra Work Approved** — Freelancers turn an extra client request into a priced approval and payment link before doing the work (`2026-09-07-afternoon-approve-extra-work.md`)
 - **2026-09-07** · `theatre rehearsal software` · **Give Every Actor a Rehearsal Partner** — Community-theatre directors turn one script into private line practice for the whole cast (`2026-09-07-morning-cast-line-rehearsal.md`)
 - **2026-09-06** · `rental compliance software` · **Build Deposit Photo Packets** — California rental owners turn inspection photos and receipts into a clear security-deposit packet (`2026-09-06-evening-deposit-photo-packets.md`)
