@@ -1,0 +1,77 @@
+---
+title: Hear Tricky English Sounds
+slug: hear-english-sounds
+date: 2026-09-08
+slot: afternoon
+category: pronunciation learning software
+tagline: English learners train their ears to distinguish words that sound identical to them
+---
+
+## The idea
+
+An English learner hears “ship” and “sheep” as the same word, so conversation and pronunciation practice keep breaking down. This browser course diagnoses which sound contrasts they miss, then runs short listening sessions using the same words spoken by several real people. Difficulty adapts through new words and background noise, and a later test uses unheard voices. It teaches perception, not accent imitation or automated speaking scores.
+
+## A customer example
+
+Hypothetically, Emi searches “English r and l listening practice,” opens a free five-minute test, and repeatedly confuses “rock” with “lock.” She buys a 30-day course, listens through headphones, clicks the word she heard, and gets immediate correction. Ten minutes later she sees accuracy by voice and sound position; after ten sessions she takes a test with recordings she has not heard before and receives a plain progress report.
+
+## Who pays, and for what
+
+The initial buyer is an intermediate adult English learner who knows the written words but cannot reliably hear a contrast absent from their first language. They pay for a finite, measurable practice sequence rather than a general language curriculum. The same version serves tutors assigning practice and advanced learners struggling in noisy conversations; it does not serve speech disorders or promise native-like speech.
+
+A recent learner specifically wanted to repeatedly randomize minimal-pair audio until the distinction felt natural and found Anki's sequencing awkward ([discussion](https://www.reddit.com/r/languagelearning/comments/1t10wzy/program_to_help_learn_minimal_pairs/)). Separately, a teacher-practitioner says preparing perception training takes substantial time ([discussion](https://www.reddit.com/r/asklinguistics/comments/18erd0l/)). ELSA reports millions of learners and sells pronunciation practice, supporting a large paying category, though not demand for this narrow course ([ELSA](https://elsaspeak.com/inf/FluentAmerican/)).
+
+## What the AI agent would build
+
+Version one has a contrast picker, free diagnostic, lesson player, results screen, checkout, and account page. A small backend stores purchases, attempts, accuracy, and anonymous audio identifiers. The owner commissions four English speakers to record six common contrasts across varied word positions; written releases permit commercial use. The agent implements deterministic lesson selection, audio preloading, adaptive noise, Stripe checkout, accessibility, deletion, and tests.
+
+The hardest risk is validating that recordings differ only in the intended sound and remain intelligible across accents. A qualified English pronunciation teacher should audit the fixed launch library once; routine customer output needs no specialist review. Version one excludes speech recognition, generated voices, pronunciation grading, conversation bots, and user-uploaded audio.
+
+## Launch and ongoing maintenance
+
+The owner arranges recording contracts, a one-time content audit, hosting, object storage, Stripe, email, analytics, and privacy terms. Monitoring covers failed audio loads, payment webhooks, and lesson completion; maintenance is browser testing, dependency patches, refunds, and correcting any challenged recording.
+
+For the first ten learners, place the free diagnostic in r/languagelearning's “Share your resources” thread and request permission for one labelled post. The moderators' June 2026 announcement explicitly permits that thread and otherwise requires prior approval ([rules announcement](https://www.reddit.com/r/languagelearning/comments/1u537kp/announcement_we_are_tightening_the_rules_around/)). If permission or reach fails, the fallback is direct, individual outreach to 30 independent English tutors with a free class link. Search pages for “ship sheep listening quiz” and “English minimal pairs listening practice” can acquire later users, but current results include several dedicated free pages, so ranking is unverified.
+
+## Why now
+
+Nothing technical changed this month. The need and training method are established: an open research paper describes word identification with immediate feedback and reports weak-to-moderate benefits that can generalize to new words and speakers ([study](https://pmc.ncbi.nlm.nih.gov/articles/PMC6177151/)). The present entry route is that learners still ask for a purpose-built grinder in 2026 while exact-query results are fragmented among small static sites. That supports a test, not a claim of an unmet market.
+
+## What exists today
+
+MinimalPears offers a free listening game ([site](https://www.minimalpears.com/)); ESLDesk offers nine free, five-minute contrast sets with two voices ([site](https://esldesk.com/pronunciation/ship-sheep)). Both are excellent no-account substitutes and already target the proposed search queries, but neither page presents a multi-session course with held-out-voice testing.
+
+Speechling provides its whole curriculum, professional male and female recordings, and limited coaching free; unlimited human coaching starts at $19.99 monthly ([pricing](https://speechling.com/pricing)). ELSA Premium offers broad adaptive speaking practice and automated feedback at $19.99 for one month on its US offer page ([pricing](https://elsaspeak.com/inf/FluentAmerican/)). They are better comprehensive products. The proposed course wins only for learners wanting a bounded ear-training drill with natural voice variation, without speech scoring or a broad subscription.
+
+## How it makes money
+
+Proposed pricing is a free diagnostic and $12 for 30 days covering all six launch contrasts. The purchase trigger is seeing a specific failed contrast. Eighty-four new purchases produce $1,008 monthly revenue, not profit. Estimated monthly hosting, storage, email, and monitoring are $40–$100; recording and audit are estimated one-time costs of $300–$600, and payment fees and refunds are additional.
+
+Assuming 2% of qualified visitors buy, 4,200 monthly visits are needed; at an optimistic 5%, 1,680 are needed. Those are assumptions, not forecasts. First-ten outreach is roughly five owner hours for community participation and tutor messages plus three hours of support. Ongoing content and tutor outreach may take 12–20 hours monthly until search traffic works; 84 fresh monthly buyers is therefore the economic weak point. More contrast pages and learner result-sharing can continue acquisition, but neither ranking nor referral rate is proven.
+
+## The riskiest assumption
+
+Learners must pay $12 after discovering a specific hearing weakness despite strong free options. In one week, recruit 40 adults who use English weekly through one permitted resource thread and 30 tutor invitations. A qualified participant must score below 70% on one contrast. Give them a manually assembled three-session sample, then show a real $12 checkout for the remaining sessions; do not charge during this proposed test. Pass if at least 20 qualify and four attempt checkout after completing all three sessions; fail if 20 qualify and none attempts; otherwise the channel or result is inconclusive. Repeat use beyond three sessions remains unresolved and needs a day-14 follow-up.
+
+## What I rejected
+
+- Recent-condition hiking planning failed the software-product gate because trustworthy live reports require a user network or inaccessible incumbent data.
+- Appliance-fit comparison failed on acquisition economics because verified affiliate programs exist, but the inspected purchase queries offered no credible inexpensive entry route against established comparison pages.
+
+## The part I would argue against
+
+A sceptic would call this a polished version of a free five-minute web quiz. MinimalPears, ESLDesk, Anki, Speechling, and ELSA already span free drills through full coaching, while the newer replication literature says the extra benefit of multiple talkers over one may be smaller than once thought ([replication](https://www.sciencedirect.com/science/article/pii/S0749596X22000390)). The idea survives only as a cheap test because repeated phonetic training itself has evidence, a current learner describes the exact awkward workaround, and the proposed held-out test makes improvement visible. No checkout attempts after completed sample sessions should end it.
+
+The benchmark is **Give Every Actor a Rehearsal Partner** (`2026-09-07-morning-cast-line-rehearsal.md`). That idea has more identifiable buyers and stronger direct outreach economics, so its $29 production-reservation test should run next. This pronunciation course moves ahead only if its sample produces at least four checkout attempts or the theatre test gets fewer than three serious reservations.
+
+## Sources
+
+- https://www.reddit.com/r/languagelearning/comments/1t10wzy/program_to_help_learn_minimal_pairs/ — current desired workflow and Anki friction
+- https://www.reddit.com/r/asklinguistics/comments/18erd0l/ — practitioner account of preparation burden
+- https://pmc.ncbi.nlm.nih.gov/articles/PMC6177151/ — training method, outcomes, and limitations
+- https://www.sciencedirect.com/science/article/pii/S0749596X22000390 — replication caution on multiple-speaker advantage
+- https://www.minimalpears.com/ — free direct substitute
+- https://esldesk.com/pronunciation/ship-sheep — free two-voice quiz and search competition
+- https://speechling.com/pricing — free tier and $19.99 coaching price
+- https://elsaspeak.com/inf/FluentAmerican/ — current US offer, features, and prices
+- https://www.reddit.com/r/languagelearning/comments/1u537kp/announcement_we_are_tightening_the_rules_around/ — verified promotion route and restrictions
