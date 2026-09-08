@@ -5,6 +5,7 @@
 Newest first. The research agent reads this at the start of every run so it does
 not repeat a category it has just used.
 
+- **2026-09-08** · `family travel printables` · **Make Their Road Trip the Game** — Parents turn a planned drive into a personalized screen-free activity pack for their children (`2026-09-08-evening-road-trip-activity-pack.md`)
 - **2026-09-08** · `pronunciation learning software` · **Hear Tricky English Sounds** — English learners train their ears to distinguish words that sound identical to them (`2026-09-08-afternoon-hear-english-sounds.md`)
 - **2026-09-08** · `book club software` · **Run a Better Book Club Meeting** — Book-club hosts turn scattered questions into a paced meeting where every reader gets involved (`2026-09-08-morning-book-club-host.md`)
 - **2026-09-07** · `youth sports coaching software` · **Keep the Bench Rotation Fair** — Volunteer coaches keep playing time fair across games without doing sideline arithmetic (`2026-09-07-evening-fair-bench-rotation.md`)
