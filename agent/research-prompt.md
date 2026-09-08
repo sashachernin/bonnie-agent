@@ -8,8 +8,11 @@ below and write no post. Do not build the product or modify any other repository
 file. `IDEAS.md` and `docs/` are generated.
 
 This repository is only the output destination, not the research subject. Read
-`IDEAS.md` for prior ideas; otherwise open only the post you are writing. Do not
-inspect repository code, scripts, logs, or git state. The runner handles the
+`IDEAS.md` for prior ideas and read up to three prior posts for the comparison
+in Phase 0; otherwise open only the post you are writing. Do not inspect
+repository code, scripts, logs, or git state. Do not contact people, post to
+communities, collect payments, or run customer experiments; describe those
+actions as proposed tests for the owner. The runner handles the
 build and everything after you write the post.
 
 ## Product scope
@@ -63,6 +66,20 @@ six most recent entries by audience, underlying need, workflow, and category.
 Choose a meaningfully different direction to explore; changing a category label
 alone does not create variety. Reusing a format such as SaaS is fine when the
 need and audience differ. Do not choose an obscure niche merely to be different.
+
+Use the ledger to select up to three promising prior proposals and read them in
+full. Reserve one of those reads for a previous benchmark named by a selected
+post when available; keep the total to three rather than following links endlessly. Select the
+strongest as this run's benchmark using customer benefit, evidence for adoption,
+accessible distribution, and economics. Prior posts are hypotheses, not verified
+traction; recheck any old factual claim that the new recommendation depends on.
+If there are no prior posts, establish the first benchmark with this run.
+
+Look for repeated business models as well as categories. If four or more of the
+last six proposals are paid workflow utilities, include at least one materially
+different model in the discovery shortlist, such as a game, learning product,
+ad-supported utility, or affiliate discovery site. Apply the same quality gates;
+do not select a weaker business merely to diversify.
 
 Choose a direction, not a predetermined idea. Use a plain, accurate category label
 for the eventual post; there is no fixed taxonomy.
@@ -127,6 +144,14 @@ Before developing a build plan, make the business case for each candidate:
   support fit the price? Naming SEO, social media, or a community is insufficient
   without relevant audience evidence and a practical way to gain attention.
 
+For each candidate, write a brief internal comparison covering the strongest
+observed demand signal, reason to choose it over the best substitute, evidence
+for one acquisition channel, likely price and recurrence, and strongest objection.
+Distinguish observed behavior or spending from complaints, vendor audience totals,
+and your own inferences. Prefer evidence of repeated use, paid workarounds, or
+specific dissatisfaction with alternatives. Two complaints establish a problem,
+not demand for another app.
+
 Discard weak business cases before researching detailed implementation. Do not
 rescue a trivial benefit with a long feature list, speculative roadmap, or an
 increasingly narrow audience.
@@ -179,6 +204,20 @@ by itself grounds for rejection. Conversely, a complaint alone does not prove
 people want a separate product. Do not require proven sales, an uncontested
 market, or guaranteed growth before recommending a test.
 
+Before selecting a winner, state one decisive reason reachable users would
+choose it and cite evidence supporting that reason. If the reason is simpler
+setup, browser access, or a lower price, show that users actually experience the
+corresponding friction or cost. Otherwise label that preference unverified and
+find another supported adoption or distribution case. A list of possible
+advantages is insufficient. Compare against the strongest free or paid
+substitute, not only expensive suites.
+
+Apply the strongest objection before publication: what observed evidence makes
+the positive case survive it? Cheap implementation and the ability to run a cheap
+test do not themselves answer an objection. If the only rebuttal is "perhaps
+someone will pay," return to discovery. Exact conversion and price can remain
+unknown when the underlying adoption case is supported.
+
 Choose a candidate only when it has a positive, evidence-backed business case,
 not merely because it is the least weak of three. Keep two meaningful rejected
 alternatives and their reasons for the post. You need one promising candidate,
@@ -230,9 +269,29 @@ sections below. Focus additional research on these checks:
   sources. For search-led distribution, inspect relevant queries and competing
   results in the proposed language or region. Identify a concrete entry route;
   do not infer attainable rankings from keyword existence or competitor revenue.
-- Ground acquisition in a specific channel with evidence of relevant users and
-  a practical route to the first ten. Treat traffic, conversion, and ad yields
-  as assumptions. Estimate major running costs and ordinary support needs.
+- Investigate one primary acquisition channel in depth. For search, inspect at
+  least two concrete target queries and the leading results; explain a useful
+  page or tool the entrant could offer and why it could earn attention. For
+  communities, read promotion rules or an actual permitted placement example.
+  For associations or directories, verify how an owner can obtain a listing,
+  placement, partnership, or public business contact route and any published fee.
+  Audience size alone is not access. If rules, cost, or access cannot be verified,
+  disclose the gap and provide a verified fallback; do not treat an unanswered
+  permission request as an established channel.
+- Translate the $1k revenue target into acquisition workload. Use explicitly
+  assumed conservative and optimistic conversion scenarios to estimate qualified
+  visits, trials, or contacts needed; distinguish buyers from repeat project
+  purchases. For annual plans, distinguish the active subscriber base from new
+  sales and renewals. Estimate owner hours for outreach, onboarding, support,
+  and content creation, separately from cash costs. Explain whether this fits
+  the price and solo-owner scope; do not assume free organic traffic or two
+  support hours without a basis. Estimates are sensitivity checks, not forecasts.
+- Compare the winner with the Phase 0 benchmark on benefit, adoption evidence,
+  acquisition, and economics. State which deserves the owner's next validation
+  effort and why. A new idea need not beat the benchmark on every dimension, but
+  it must add a credible alternative or stronger evidence, not just a new category.
+  If it adds neither, return to discovery and use the unsuccessful-run path if
+  nothing qualifies. Do not manufacture a winner to fill a publication slot.
 
 Missing evidence must remain visible in the post. If new findings defeat a gate,
 select another already-researched candidate that passes or return to discovery
@@ -309,8 +368,9 @@ uses, and the hardest build risk. State what is excluded from version one.
 Name what the owner must arrange, such as hosting accounts, payment setup, or
 app-store submission. Describe ordinary software monitoring, support exceptions,
 and code maintenance the AI can help with. Give a specific route to the first ten
-users and evidence for why that audience can be reached. Do not assume discovery
-is automatic.
+users and evidence for why that audience can be reached. Include what you
+verified about the primary channel's access, competition, or placement rules,
+plus any material gap and fallback. Do not assume discovery is automatic.
 
 ## Why now
 
@@ -343,13 +403,27 @@ major running costs and distinguish revenue from profit. Do not present assumed
 conversion rates, ad yields, or demand as researched facts. The $1k calculation
 is a first milestone, not evidence of a market or the intended ceiling. Connect
 the required customer or traffic volume to the audience evidence and explain
-how acquisition could continue beyond the first ten users.
+how acquisition could continue beyond the first ten users. Include a compact
+conservative/optimistic acquisition calculation and the estimated owner workload
+from Phase 3, with assumptions clearly labelled.
 
 ## The riskiest assumption
 
 The one belief that, if wrong, kills this. Then: the cheapest test that could
 falsify it within a week, using no money and no code where possible. Be
 specific — "post X in Y community and see if Z happens", not "validate demand".
+Define the qualified participant, recruitment denominator, observable action,
+time window, and pass/fail/inconclusive outcomes. For paid tools, prefer a real
+customer task followed by payment or a concrete purchase commitment at the stated
+price; likes, survey enthusiasm, or price-aware email signups are weak signals,
+not a pass. Include repeat use when recurrence supports the economics; if the
+natural interval exceeds a week, specify a later follow-up and mark retention
+unresolved after the initial test. For free
+or affiliate products, test real task completion, return visits, or relevant
+outbound clicks rather than imposing a paid-product test. A mockup can test
+comprehension but cannot establish delivered value. Insufficient qualified reach
+is an inconclusive channel test, not proof of absent demand. Propose the test;
+do not execute outreach or collect money during this run.
 
 ## What I rejected
 
@@ -364,6 +438,13 @@ would put it. Explain briefly why the evidence still makes a cheap validation te
 worthwhile, and which result would make you abandon the idea. Do not manufacture
 an upbeat rebuttal: if the objection already defeats the business case, discard
 the candidate before publication.
+
+End this section with a short portfolio comparison identifying the prior
+benchmark by title and filename, or stating that this
+is the first proposal. Say which idea should be tested next and what evidence
+would change that choice. If the benchmark remains stronger, recommend its
+specific next experiment instead of implying the new post should be built.
+Never describe an unexecuted test as validation or invent customer results.
 
 ## Sources
 
@@ -395,6 +476,11 @@ Before finishing, check:
   presenting a rejected idea or merely an app that can be built.
 - The strongest argument against the idea is specific and candid; no known
   finding in the post already defeats the stated reason to pursue it.
+- The adoption reason survives the strongest substitute and objection; community
+  size and easy implementation are not being used as substitutes for that case.
+- Acquisition calculations include owner effort, and the validation test measures
+  behavior appropriate to the revenue model rather than just stated interest.
+- The comparison identifies the best next test across this idea and the benchmark.
 - The filename, frontmatter, and twelve headings match the required format.
 
 When the file is written, stop. Do not run builds or git, summarize the post in

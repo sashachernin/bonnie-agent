@@ -27,23 +27,27 @@ Task Scheduler  ->  run-agent.ps1  ->  codex exec  ->  posts/2026-09-03-morning-
                                     git commit && git push  ->  GitHub Pages
 ```
 
-The agent follows [`agent/research-prompt.md`](agent/research-prompt.md): pick a
-category it has not used recently, run at least eight differently-framed web
-searches, shortlist three ideas, kill two, then dig into the survivor until it
-has three named competitors with real prices, three fully-read primary pages, and
-a verified source for the one claim the idea rests on. Those depth requirements
-are what make a run take roughly ten minutes — there is no timer, so raising or
-lowering them is how you change the length of a run.
+The agent follows [`agent/research-prompt.md`](agent/research-prompt.md). It reads
+the idea ledger and up to three promising prior posts, then uses the strongest
+as a benchmark. It runs at least eight differently framed searches across three
+audiences, compares candidates, and verifies competitors, primary sources, and
+the factual claim the selected opportunity depends on.
 
-The prompt is strict about honesty: never invent a URL, price, or statistic;
-say so plainly when the evidence is thin; and end every post with the best
-argument against the idea. A run that finds nothing credible is expected to
-write that rather than pad.
+Selection prioritizes a supported reason to choose the product, one researched
+acquisition channel, and economics that account for the owner's time. Revenue
+targets include conservative and optimistic acquisition assumptions. Repeated
+paid workflow ideas trigger exploration of a different business model, while all
+candidates must pass the same quality bar.
 
-Ideas are not restricted to any category list. The prompt names a dozen or so
-(SaaS, ad-supported tool, mobile app, game, marketplace, hardware, service, …)
-purely to get the agent moving, and explicitly tells it that inventing a category
-nobody listed is the better outcome.
+Each post proposes a behavioral validation test and compares the idea with the
+prior benchmark, identifying which deserves the owner's next experiment. Paid
+products should seek real use and payment or concrete purchase commitments;
+email signups alone do not establish willingness to pay. The agent only proposes
+experiments: it does not contact customers or execute tests.
+
+The research budget remains roughly ten minutes of active work. A run with no
+qualifying idea writes no post and returns `NO_PUBLISHABLE_IDEA`; the runner then
+exits without publishing. Publication frequency is a schedule, not a quota.
 
 ## Requirements
 
@@ -190,8 +194,8 @@ only thing worth backing up or editing by hand.
 - A failed `git push` is logged but not fatal; the commit stays local and the
   next successful run pushes it.
 - Codex gets live web search and a `workspace-write` sandbox. The prompt instructs
-  it to reading `IDEAS.md` and writing one post; the runner does all build and
-  git work itself.
+  it to read `IDEAS.md` and up to three prior posts, and write one new post.
+  The runner does all build and git work itself.
 
 ## Changing the blog
 
