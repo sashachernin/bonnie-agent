@@ -1,4 +1,4 @@
-# Run instructions: research and propose one software-product business idea
+# Run instructions: research and propose one code-enabled business idea
 
 You are running unattended. Nobody will answer questions. Research an opportunity
 on the web and deliver one promising business idea worth testing, written as one
@@ -15,22 +15,38 @@ communities, collect payments, or run customer experiments; describe those
 actions as proposed tests for the owner. The runner handles the
 build and everything after you write the post.
 
-## Product scope
+## Business scope
 
-Find a reusable, self-service software product that one owner with a laptop, a
-few hundred dollars, and an AI coding agent could realistically build and launch.
-Web apps, mobile apps, games, extensions, developer tools, educational products,
-ad-supported websites, and affiliate discovery or comparison sites are all welcome. The coding agent builds and helps
-maintain the software; the deployed software delivers customer value while the
-agent is offline. Ordinary code and APIs are sufficient. AI features are optional
-and must have a bounded role, affordable costs, and failure handling.
+Find a business with credible revenue potential that one owner with a laptop,
+a few hundred dollars, and an AI coding agent could realistically build and launch.
+Code should enable its delivery or operation; customers need not be buying software.
+Start with what attracts an audience, who pays, and how the owner earns revenue,
+then identify the smallest implementation needed to support that business.
+
+Eligible businesses include affiliate discovery and comparison sites, useful
+content or directories funded by ads or sponsorships, self-service digital
+products, games, educational experiences, apps, extensions, and SaaS. Useful
+curation, localized information, entertainment, and purchase discovery can be the
+core value. A simple website can be enough; do not add an app, dashboard, AI
+feature, or subscription merely to make an opportunity look like software.
+These are examples to broaden discovery, not preferred winners.
+
+The deployed business must deliver value while the coding agent is offline.
+The agent builds and helps maintain the code. Ordinary code and APIs are
+sufficient. AI features are optional and must have a bounded role, affordable
+costs, and failure handling.
 
 Exclude consulting, managed services, agent-for-hire businesses, bespoke customer
 fulfilment, and products requiring specialist review of most results. The owner
-may arrange accounts, make business decisions, and handle occasional support.
+may arrange accounts, make business decisions, curate or update content, and
+handle occasional support. Account for ongoing editorial work, data freshness,
+partner management, and acquisition effort as well as technical maintenance;
+these must fit a solo owner rather than hide a labor-intensive service.
 
-Keep the implementation small and the underlying need substantial. Seek recurring
-jobs, wants, or frustrations shared by a sizable reachable audience. Do not default
+Keep the implementation small and the commercial opportunity substantial. Seek
+existing spending, purchase intent, attention, jobs, wants, or frustrations shared
+by a sizable reachable audience. A problem solved by an app is one route to
+revenue, not the default definition of an opportunity. Do not default
 to specialized spreadsheet or file-conversion problems, or escape competition by
 adding increasingly rare customer qualifications. Consumer needs, entertainment,
 and everyday utilities count as much as business problems.
@@ -75,14 +91,18 @@ accessible distribution, and economics. Prior posts are hypotheses, not verified
 traction; recheck any old factual claim that the new recommendation depends on.
 If there are no prior posts, establish the first benchmark with this run.
 
-Look for repeated business models as well as categories. If four or more of the
-last six proposals are paid workflow utilities, include at least one materially
-different model in the discovery shortlist, such as a game, learning product,
-ad-supported utility, or affiliate discovery site. Apply the same quality gates;
-do not select a weaker business merely to diversify.
+Look for repeated business models as well as categories. Use that history to
+broaden discovery beyond another paid app for a different audience. Every run's
+shortlist must include at least one business where users are not buying software,
+such as affiliate discovery, an ad-supported information site, a sponsored
+directory, or a one-time digital product. Compare at least two materially
+different revenue models across the three candidates. Apply the same quality
+gates; do not select a weaker business merely to diversify.
 
 Choose a direction, not a predetermined idea. Use a plain, accurate category label
-for the eventual post; there is no fixed taxonomy.
+that describes the market or activity, such as language learning, book clubs, or
+shopping discovery. Do not automatically append "software" or use a category
+rename as evidence of a different business model. There is no fixed taxonomy.
 
 ## Phase 1 — Scan for signals
 
@@ -91,9 +111,11 @@ least **three substantially different audiences or everyday needs** before
 narrowing. Rewordings of one query do not count. Include at least two searches
 about common recurring needs, popular uses, or reasons people already pay for or
 repeatedly use products, rather than only complaints about missing features.
-Include at least one search for established, feasible business models where a
-new entrant could earn a share of existing demand. This can overlap those two
-searches; novelty and unmet needs are not prerequisites.
+Include at least two searches for monetizable demand beyond paid software, such
+as shopping queries served by affiliate sites, information audiences supported
+by ads or sponsors, or digital goods people already buy. Investigate established,
+feasible business models where a new entrant could earn a share of existing
+demand. These searches can overlap the recurring-needs searches; novelty and unmet needs are not prerequisites.
 
 Useful framings include:
 
@@ -127,8 +149,10 @@ hypothetical examples, and unresolved willingness to pay.
 Form **three candidates addressing substantially different needs or audiences**.
 At least two should target a common job or desire across a broad audience or
 sizable profession or hobby. Consider all three; they do not all need to pass.
-For each, identify the user and payer, core workflow, build and launch needs,
-likely acquisition channel, recurrence, and conditions that limit the audience.
+For each, identify the audience, payer, revenue-generating event, core experience,
+build and launch needs, likely acquisition channel, repeat usage or continuing
+new demand, and conditions that limit the audience. State the business model
+before proposing features; user and payer may be different parties.
 Separate actual constraints from incidental details of an illustrative example.
 
 Before developing a build plan, make the business case for each candidate:
@@ -146,7 +170,8 @@ Before developing a build plan, make the business case for each candidate:
 
 For each candidate, write a brief internal comparison covering the strongest
 observed demand signal, reason to choose it over the best substitute, evidence
-for one acquisition channel, likely price and recurrence, and strongest objection.
+for one acquisition channel, monetization terms and required customer or traffic
+volume, and strongest objection.
 Distinguish observed behavior or spending from complaints, vendor audience totals,
 and your own inferences. Prefer evidence of repeated use, paid workarounds, or
 specific dissatisfaction with alternatives. Two complaints establish a problem,
@@ -156,12 +181,12 @@ Discard weak business cases before researching detailed implementation. Do not
 rescue a trivial benefit with a long feature list, speculative roadmap, or an
 increasingly narrow audience.
 
-### Software-product gate
+### Business feasibility gate
 
 Reject a candidate if any of these requirements fails. For the likely winner,
 verify critical dependencies rather than assuming the coding agent can solve them.
 
-1. A useful first version fits the owner, budget, and self-service product scope
+1. A useful first version fits the owner, budget, and self-service business scope
    above, without a large team, specialist licence, or major capital investment.
 2. Required data, libraries, APIs, and distribution channels are accessible on
    terms permitting the intended use and fit the budget.
@@ -252,7 +277,9 @@ sections below. Focus additional research on these checks:
 - Find **three named competitors or substitutes with actual prices from their
   own pages**, including free alternatives where relevant. If fewer can be
   verified, disclose the gap and treat it as uncertainty, not proof of an open
-  market. Explain what users do today and its evidenced money or time cost;
+  market. For free content, directories, or affiliate sites, record free user
+  access and investigate their monetization; do not require a subscription price
+  or replace relevant competitors with paid apps just to fill this comparison. Explain what users do today and its evidenced money or time cost;
   label any estimates.
 - Open and read **at least three primary pages**, such as vendor pricing,
   documentation, changelogs, or original user discussions. Snippets do not count.
@@ -332,8 +359,8 @@ not add keys. If a value would contain a colon followed by a space, reword it.
 ```markdown
 ## The idea
 
-Three to five plain-English sentences. Begin with the person and the frustrating
-situation, then say exactly what the business does for them. Do not begin with a
+Three to five plain-English sentences. Begin with the person and their need,
+desire, or purchase intent, then say exactly what the business offers and how it earns revenue. Do not begin with a
 market category, regulatory classification, or phrase such as "a productized
 service." Assume the reader knows nothing about the industry. Replace specialist
 terms where possible and define any unavoidable term immediately.
@@ -341,9 +368,10 @@ terms where possible and define any unavoidable term immediately.
 ## A customer example
 
 Walk through one ordinary, explicitly hypothetical transaction. What happens to
-make the customer seek a tool? How do they find it? What do they click, upload,
-or connect? What does the software do? What do they receive, how long does it
-take, and what is better afterward?
+bring the person to the business? How do they find it? What do they read, play,
+compare, click, buy, upload, or download? What do they receive, how long does it
+take, and what is better afterward? Show where revenue could arise and who pays,
+including when an advertiser or merchant pays instead of the visitor.
 Use concrete objects and actions. Do not invent evidence or present the example
 as a real customer.
 
@@ -359,16 +387,19 @@ than an unusual exception; disclose gaps in the evidence.
 ## What the AI agent would build
 
 Describe the smallest useful product: its essential screens, user workflow,
-backend processing, data storage, and payments or ads where relevant. Explain
-what the coding agent implements and tests, which existing services the software
+backend processing, data storage, and payments or ads only where relevant. A
+content site may need only useful pages, navigation, permitted data, and affiliate
+links; justify the code by its role in the business rather than feature count.
+Explain what the coding agent implements and tests, which existing services it
 uses, and the hardest build risk. State what is excluded from version one.
 
 ## Launch and ongoing maintenance
 
 Name what the owner must arrange, such as hosting accounts, payment setup, or
 app-store submission. Describe ordinary software monitoring, support exceptions,
-and code maintenance the AI can help with. Give a specific route to the first ten
-users and evidence for why that audience can be reached. Include what you
+and code maintenance the AI can help with. Include content production, curation,
+data updates, and partner work where relevant, with realistic owner effort. Give
+a specific route to the first ten users and evidence for why that audience can be reached. Include what you
 verified about the primary channel's access, competition, or placement rules,
 plus any material gap and fallback. Do not assume discovery is automatic.
 
@@ -428,7 +459,7 @@ do not execute outreach or collect money during this run.
 ## What I rejected
 
 The two candidates you killed in Phase 2 and the one-line reason for each. Say
-whether each failed on demand or economics, or failed the software-product gate.
+whether each failed on demand or economics, or failed the business feasibility gate.
 
 ## The part I would argue against
 
@@ -468,8 +499,9 @@ meet the target or omit a consequential caveat to fit it.
 
 Before finishing, check:
 
-- A stranger can explain who has the problem, what happens today, what the user
-  does, and what the software delivers.
+- A stranger can explain the audience and what attracts them, what the business
+  delivers, who pays, and which event generates revenue. The code supports that
+  business; an app-shaped solution is not required.
 - Sources support factual claims; proposed prices, estimates, and hypothetical
   examples are clearly labelled. Weak or missing evidence is stated plainly.
 - The post recommends a worthwhile test of a supported opportunity, rather than

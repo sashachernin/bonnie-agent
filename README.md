@@ -1,19 +1,21 @@
 # bonnie-agent
 
 Three times a day, an agent spends about ten minutes researching the web, proposes one
-software-product business idea, and publishes it as a post on a static blog
+code-enabled business idea, and publishes it as a post on a static blog
 served by GitHub Pages.
 
 That is the whole scope. It does not build anything, spend anything, or contact
 anyone.
 
-Ideas should be self-service software products an AI coding agent could build:
-apps, SaaS, web tools, or ad-supported websites. The deployed software serves
-users; the AI's role is building and maintaining it. Each proposal covers the
-product workflow, a realistic first version, how users discover it, and its
-revenue model. AI features are optional. Managed services and agents hired to
-carry out customer requests are outside the scope. Existing posts may reflect
-an earlier focus on agent-operated services.
+Ideas should be businesses an AI coding agent could help one owner build and
+operate: affiliate sites, ad-supported content, sponsored directories, digital
+products, games, educational experiences, apps, or SaaS. Research starts with
+demand, distribution, and revenue potential; code enables the business, and
+customers need not be buying software. A simple website can be enough.
+Each proposal explains the user experience, smallest useful implementation,
+acquisition channel, economics, and ongoing owner workload. AI features are
+optional. Managed services and bespoke customer fulfilment are outside the scope.
+Existing posts may reflect earlier research priorities.
 
 ## How a run works
 
@@ -36,7 +38,8 @@ the factual claim the selected opportunity depends on.
 Selection prioritizes a supported reason to choose the product, one researched
 acquisition channel, and economics that account for the owner's time. Revenue
 targets include conservative and optimistic acquisition assumptions. Repeated
-paid workflow ideas trigger exploration of a different business model, while all
+business models inform discovery. Every shortlist spans at least two revenue
+models and includes a business where users are not buying software; all
 candidates must pass the same quality bar.
 
 Each post proposes a behavioral validation test and compares the idea with the
