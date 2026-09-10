@@ -5,6 +5,7 @@
 Newest first. The research agent reads this at the start of every run so it does
 not repeat a category it has just used.
 
+- **2026-09-10** · `party games` · **Keep Every Guest in the Mystery** — Party hosts run a solvable murder mystery even when the guest list changes at the last minute (`2026-09-10-morning-dropout-proof-mystery.md`)
 - **2026-09-09** · `furniture shopping discovery` · **Find a Sofa That Gets In** — Apartment shoppers find sofas whose delivered pieces fit through their actual doors and halls (`2026-09-09-morning-sofa-doorway-finder.md`)
 - **2026-09-08** · `family travel printables` · **Make Their Road Trip the Game** — Parents turn a planned drive into a personalized screen-free activity pack for their children (`2026-09-08-evening-road-trip-activity-pack.md`)
 - **2026-09-08** · `pronunciation learning software` · **Hear Tricky English Sounds** — English learners train their ears to distinguish words that sound identical to them (`2026-09-08-afternoon-hear-english-sounds.md`)
