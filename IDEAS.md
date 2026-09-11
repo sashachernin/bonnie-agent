@@ -5,6 +5,7 @@
 Newest first. The research agent reads this at the start of every run so it does
 not repeat a category it has just used.
 
+- **2026-09-11** · `home decorating` · **Mark Every Gallery Wall Hook** — Android users turn their own frames into an exact hanging plan before making holes (`2026-09-11-morning-gallery-wall-marks.md`)
 - **2026-09-10** · `marathon spectating` · **Catch Your Runner Three Times** — Marathon supporters get a timed transit plan for seeing their runner at several points without missing them (`2026-09-10-evening-marathon-cheering-plan.md`)
 - **2026-09-10** · `local music discovery` · **Find Louisville's Small Shows Tonight** — Louisville music fans find tonight's local and small-venue shows without checking dozens of feeds (`2026-09-10-afternoon-louisville-small-show-calendar.md`)
 - **2026-09-10** · `party games` · **Keep Every Guest in the Mystery** — Party hosts run a solvable murder mystery even when the guest list changes at the last minute (`2026-09-10-morning-dropout-proof-mystery.md`)
