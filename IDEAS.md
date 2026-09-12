@@ -5,6 +5,7 @@
 Newest first. The research agent reads this at the start of every run so it does
 not repeat a category it has just used.
 
+- **2026-09-12** · `family camping` · **Find a Tent That Fits the Family** — Family campers match their real beds, cots, pet space, and aisle needs to tents before buying (`2026-09-12-afternoon-family-tent-layouts.md`)
 - **2026-09-11** · `recreational pickleball` · **Fit Six Pickleball Games Into Two Hours** — Pickleball organizers turn a player list and court limit into a fast event that survives no-shows (`2026-09-11-evening-two-hour-pickleball.md`)
 - **2026-09-11** · `electric vehicle travel` · **Book a Hotel Charger That Works** — Electric-car travellers compare hotels by charger reliability, guest cost, and a nearby backup before booking (`2026-09-11-afternoon-verified-hotel-chargers.md`)
 - **2026-09-11** · `home decorating` · **Mark Every Gallery Wall Hook** — Android users turn their own frames into an exact hanging plan before making holes (`2026-09-11-morning-gallery-wall-marks.md`)
