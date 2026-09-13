@@ -5,6 +5,7 @@
 Newest first. The research agent reads this at the start of every run so it does
 not repeat a category it has just used.
 
+- **2026-09-13** · `quilting` · **Turn a Quilt Cut List Into a Map** — Quilters turn a purchased pattern’s mixed cut list into a printable sequence that wastes less fabric (`2026-09-13-afternoon-quilt-cutting-map.md`)
 - **2026-09-13** · `children’s birthday parties` · **Compare the Real Cost of a Kids Party** — Columbus parents compare the full price and rules of local kids’ party venues before they call or book (`2026-09-13-morning-columbus-party-costs.md`)
 - **2026-09-12** · `family camping` · **Find a Tent That Fits the Family** — Family campers match their real beds, cots, pet space, and aisle needs to tents before buying (`2026-09-12-afternoon-family-tent-layouts.md`)
 - **2026-09-11** · `recreational pickleball` · **Fit Six Pickleball Games Into Two Hours** — Pickleball organizers turn a player list and court limit into a fast event that survives no-shows (`2026-09-11-evening-two-hour-pickleball.md`)
