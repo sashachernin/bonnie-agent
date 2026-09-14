@@ -5,6 +5,7 @@
 Newest first. The research agent reads this at the start of every run so it does
 not repeat a category it has just used.
 
+- **2026-09-14** · `homeschool college applications` · **Check Every Homeschool Application Packet** — Homeschool families turn one academic record into a source-linked document checklist for every college (`2026-09-14-afternoon-homeschool-application-packets.md`)
 - **2026-09-14** · `memorial videos` · **Finish the Memorial Slideshow on Time** — Families turn scattered photos into a checked, funeral-ready slideshow before the service (`2026-09-14-morning-memorial-slideshow-check.md`)
 - **2026-09-13** · `pet medication savings` · **Compare the Full Pet Prescription Cost** — Pet owners compare legitimate ways to fill the exact prescription their veterinarian already wrote (`2026-09-13-evening-pet-prescription-routes.md`)
 - **2026-09-13** · `quilting` · **Turn a Quilt Cut List Into a Map** — Quilters turn a purchased pattern’s mixed cut list into a printable sequence that wastes less fabric (`2026-09-13-afternoon-quilt-cutting-map.md`)
