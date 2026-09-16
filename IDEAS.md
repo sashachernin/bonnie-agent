@@ -5,6 +5,7 @@
 Newest first. The research agent reads this at the start of every run so it does
 not repeat a category it has just used.
 
+- **2026-09-16** · `digital library access` · **Find a Library Card That Includes Ebooks** — Ebook and audiobook readers compare legal non-resident library cards before paying an annual fee (`2026-09-16-morning-ebook-library-card.md`)
 - **2026-09-15** · `birdwatching gear` · **Choose a Bird Feeder Camera Without Surprises** — Bird lovers compare camera feeders by real free features, subscription cost, storage, and fit before buying (`2026-09-15-evening-bird-camera-costs.md`)
 - **2026-09-15** · `household maintenance` · **Buy the Right Fridge Filter** — Refrigerator owners match the exact filter, verified claims, and genuine sellers before a recurring purchase (`2026-09-15-morning-fridge-filter-match.md`)
 - **2026-09-14** · `homeschool college applications` · **Check Every Homeschool Application Packet** — Homeschool families turn one academic record into a source-linked document checklist for every college (`2026-09-14-afternoon-homeschool-application-packets.md`)
