@@ -5,6 +5,7 @@
 Newest first. The research agent reads this at the start of every run so it does
 not repeat a category it has just used.
 
+- **2026-09-17** · `family reunion games` · **Turn Family Stories Into Reunion Games** — Reunion organizers turn family facts and memories into printable games that get relatives talking (`2026-09-17-afternoon-family-reunion-game-pack.md`)
 - **2026-09-17** · `national park trip planning` · **Never Miss a Park Booking Window** — National park travellers turn trip dates into a checked calendar of permits, release times, and backup chances (`2026-09-17-morning-park-booking-calendar.md`)
 - **2026-09-16** · `classroom learning games` · **Turn Review Questions Into a Classroom Escape Game** — Teachers turn their own review questions into a ready-to-run escape game without editing a complicated template (`2026-09-16-afternoon-classroom-escape-builder.md`)
 - **2026-09-16** · `digital library access` · **Find a Library Card That Includes Ebooks** — Ebook and audiobook readers compare legal non-resident library cards before paying an annual fee (`2026-09-16-morning-ebook-library-card.md`)
