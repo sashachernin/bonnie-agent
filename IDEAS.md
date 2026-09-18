@@ -5,6 +5,7 @@
 Newest first. The research agent reads this at the start of every run so it does
 not repeat a category it has just used.
 
+- **2026-09-18** · `e-bike transport` · **Find a Rack That Fits Your E-Bike** — E-bike owners check rack, bike, hitch, and vehicle limits together before buying (`2026-09-18-morning-ebike-rack-fit.md`)
 - **2026-09-17** · `construction paperwork` · **Stop Chasing Expired Subcontractor Insurance** — Small contractors keep subcontractor insurance dates current without replacing email with another portal (`2026-09-17-evening-email-coi-renewals.md`)
 - **2026-09-17** · `family reunion games` · **Turn Family Stories Into Reunion Games** — Reunion organizers turn family facts and memories into printable games that get relatives talking (`2026-09-17-afternoon-family-reunion-game-pack.md`)
 - **2026-09-17** · `national park trip planning` · **Never Miss a Park Booking Window** — National park travellers turn trip dates into a checked calendar of permits, release times, and backup chances (`2026-09-17-morning-park-booking-calendar.md`)
