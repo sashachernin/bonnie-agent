@@ -5,6 +5,7 @@
 Newest first. The research agent reads this at the start of every run so it does
 not repeat a category it has just used.
 
+- **2026-09-19** · `crochet pattern publishing` · **Catch Crochet Pattern Errors Before Testers Do** — Crochet designers check stitch math and missing details before asking testers to spend yarn and time (`2026-09-19-afternoon-crochet-pattern-preflight.md`)
 - **2026-09-19** · `estate settlement` · **Divide Family Belongings Without a Spreadsheet** — Executors let distant heirs rank ordinary belongings and record a fair family-approved division (`2026-09-19-morning-divide-family-belongings.md`)
 - **2026-09-18** · `paint-by-number shopping` · **Check Your Photo Before Buying a Paint Kit** — Hobby painters preview whether a personal photo will make a satisfying custom kit before ordering (`2026-09-18-evening-preview-custom-paint-kit.md`)
 - **2026-09-18** · `craft market vending` · **Find Craft Markets Worth the Fee** — Dallas makers find source-checked markets before risking an application or booth fee (`2026-09-18-afternoon-verified-dfw-markets.md`)
