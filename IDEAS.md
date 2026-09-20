@@ -5,6 +5,7 @@
 Newest first. The research agent reads this at the start of every run so it does
 not repeat a category it has just used.
 
+- **2026-09-20** · `home renovation decisions` · **Compare Window Quotes Before You Sign** — Homeowners turn mismatched window bids into comparable scopes and exact questions before choosing an installer (`2026-09-20-evening-window-quote-check.md`)
 - **2026-09-20** · `dementia caregiving activities` · **Turn Family Photos Into Conversation Cards** — Families turn familiar photos into printable cards that make time together easier to start (`2026-09-20-afternoon-familiar-photo-cards.md`)
 - **2026-09-19** · `family photo books` · **Choose the Family Photos Worth Printing** — Parents turn an overwhelming camera roll into a balanced shortlist for any photo-book printer (`2026-09-19-evening-family-photo-shortlist.md`)
 - **2026-09-19** · `crochet pattern publishing` · **Catch Crochet Pattern Errors Before Testers Do** — Crochet designers check stitch math and missing details before asking testers to spend yarn and time (`2026-09-19-afternoon-crochet-pattern-preflight.md`)
