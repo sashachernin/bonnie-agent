@@ -1,0 +1,77 @@
+---
+title: Know What Gets Through the Gate
+slug: concert-entry-check
+date: 2026-09-21
+slot: morning
+category: concert entry planning
+tagline: Concertgoers check bags and personal items against event rules before leaving home
+---
+
+## The idea
+
+Concertgoers need to know whether their actual bag, power bank, camera, water bottle, medicine, or fan item will get through security. Build a free, source-linked checker for specific events, not merely venues: choose the show, describe the item, and receive allowed, prohibited, or ask-the-venue with the exact official wording and checked date. Visitors avoid a ruined arrival; luggage-storage companies pay a referral commission when someone with a prohibited bag books a nearby fallback.
+
+## A customer example
+
+Hypothetically, Maya searches “can I bring a power bank to Prudential Center concert” before taking a train. She chooses her show, marks a small battery pack and 9-by-6-inch purse, and sees separate answers, official links, and a warning that event rules can override venue rules. If the purse fails, she clicks a nearby storage option and books there. The check takes two minutes; Maya pays the storage company, which could pay this site a commission.
+
+## Who pays, and for what
+
+The initial audience is US concertgoers travelling without a car, because they cannot simply return a rejected item to it. The same first version serves sports and festival attendees wherever official event rules are available. It excludes weapons judgments, undocumented staff discretion, and promises of admission.
+
+This is a recurring audience with episodic individual use. Current attendees ask about ambiguous bag measurements, crutches, and power banks ([ITZY discussion](https://www.reddit.com/r/ITZY/comments/1wf2mqe/tunnelvision_worldtour_paris_questions/)); another attendee had to check a game console and leave early despite prior Reddit reassurance ([Miku Expo discussion](https://www.reddit.com/r/Mikuexpo/comments/1t6rdpr/prudential_center_dont_bring_your_ds/)). Those are independent behavior signals, not a traffic estimate. The payer is a storage network after a completed booking, not the visitor.
+
+## What the AI agent would build
+
+Version one covers 40 upcoming events at ten rail-accessible venues. It has event pages, an item-and-bag form, deterministic dimension and material checks, citations beside every answer, a “not stated” state, and nearby storage links. Records store venue, event override, item class, limit, exception, official URL, and verification date; a scheduled source-diff check queues changes for owner review.
+
+The coding agent builds the static pages, rules engine, editor, analytics, affiliate tracking, and regression fixtures. The hardest risk is correctly merging a general venue rule with a one-show exception. Version one excludes image recognition, ticket sales, user accounts, scraped event calendars, and medical or accessibility advice.
+
+## Launch and ongoing maintenance
+
+The owner arranges hosting, analytics, affiliate approval, disclosures, and direct verification from official venue and promoter pages. Initial research is an estimated 35–50 hours; checking upcoming events and resolving source changes takes 15–25 hours monthly. The agent flags diffs, but the owner decides ambiguous wording and sends users to the venue for exceptions.
+
+For the first ten users, publish checked pages for ten upcoming shows where fan discussions already contain item questions, then request permission to share the relevant page in each artist community. Permission is unverified, so the fallback is search pages aimed at exact artist-plus-venue questions such as the power-bank query above. Official Wembley guidance explicitly says some events add restrictions, while current bag directories organize primarily by venue. Ranking is unverified.
+
+## Why now
+
+Nothing fundamental changed this month. The current entry route is the continuing stream of event-specific questions and consequences, while official rules vary: the [National Football League](https://www.nfl.com/legal/clear-bag-policy) permits a 12-by-6-by-12-inch clear bag and directs fans to team guidance, whereas [Wembley](https://help.wembleystadium.com/support/solutions/articles/7000100043-frequently-asked-questions) uses an A4-size limit and warns that concerts can add restrictions. A 2026 Wembley event page separately answered whether power banks were allowed. The opportunity is timely content around upcoming shows, not a newly unmet market.
+
+## What exists today
+
+[BagCheck](https://www.willmybagfit.net/venues) is free and lists 144 venues with a bag checker. [Concert Bag Policy](https://www.concertbagpolicy.com/all-venues) is free, lists 175 venues, dates its checks, and earns through disclosed affiliate links. Official venue pages such as the [NFL policy](https://www.nfl.com/legal/clear-bag-policy) and [Wembley FAQ](https://help.wembleystadium.com/support/solutions/articles/7000100043-frequently-asked-questions) are free and authoritative. These are the strongest substitutes; their user price is $0, and no paid comparison is needed.
+
+The entrant should not duplicate their venue tables. It wins a visit only on event-specific, multi-item queries and by stating “not published” rather than generalizing. Concert Bag Policy itself tells readers to confirm the specific show because one-off rules can change. Incumbents are better for broad venue browsing, and official pages remain the final authority.
+
+## How it makes money
+
+Access is free. The verified [Bounce affiliate program](https://bounce.com/ls/affiliates) pays 10% on completed bookings, monthly with no minimum; approval is required. LuggageHero separately publishes 10% initially, rising to 15% above 200 monthly clicks and 20% above 500 ([terms](https://help.luggagehero.com/en/articles/13570862-commission-tiers-bonus-opportunities)). Use one clearly labelled storage fallback only when relevant.
+
+Assume a $15 eligible booking, making $1.50 commission. About 667 completed bookings produce $1,000 revenue. Conservatively, if 2% of qualified visits book, that needs 33,350 monthly visits; optimistically at 8%, 8,338. Neither conversion nor average order is researched fact, and cancelled bookings may not pay. Hosting and monitoring are estimated at $30–$100 monthly. At that traffic, assume 20 hours of policy work, eight support hours, and 15–25 acquisition hours monthly. Growth requires a repeatable calendar of new event pages, not repeat use by Maya; revenue is not profit.
+
+## The riskiest assumption
+
+The killing belief is that event-specific answers prompt enough real storage clicks despite free venue pages and existing directories. In one week, make a no-code table for five upcoming events and seek permitted placement before 200 relevant community viewers. A qualified participant is attending one of those events and names an item they intend to carry. Pass if 20 complete a check, 12 open an official rule, and four visitors with a rejected bag open a nearby storage booking page; fail if 20 complete checks, at least eight have rejected bags, and none opens storage. Fewer than eight rejected-bag cases is inconclusive. Do not book, message, or collect anything during this run.
+
+## What I rejected
+
+- A sewing-machine presser-foot affiliate finder failed standalone value because a current fit finder and manufacturer compatibility charts already answer the same model-level question without a supported distribution edge.
+- Theme-based family meal-planning printables failed economics because observed users often solve the recurring need with a paper chart, notes, or free apps, leaving no supported purchase trigger.
+
+## The part I would argue against
+
+A sceptic would say two current sites already maintain 144 and 175 venue policies, official pages are one search away, and storage applies only after the product has delivered bad news. That makes the revenue event rare and the editorial burden real. The case survives a cheap test because official guidance and current attendee reports show event overrides and non-bag items are exactly where venue-level summaries fail, with tangible consequences when advice is wrong. Abandon if the qualified test produces no storage opens or if more than one of five event rules cannot be resolved from official sources.
+
+The prior benchmark is **Compare Window Quotes Before You Sign** (`2026-09-20-evening-window-quote-check.md`). Test the window comparison first: its $19 commitment needs only four buyers and addresses a much larger financial decision. Move this idea ahead only if four relevant storage clicks emerge from the small event test while the window test gets no purchase commitments.
+
+## Sources
+
+- https://www.reddit.com/r/ITZY/comments/1wf2mqe/tunnelvision_worldtour_paris_questions/ — current uncertainty about dimensions, mobility items, and power banks
+- https://www.reddit.com/r/Mikuexpo/comments/1t6rdpr/prudential_center_dont_bring_your_ds/ — a rejected item caused bag check and early departure
+- https://www.nfl.com/legal/clear-bag-policy — official limits, exceptions, and consequence of rejection
+- https://help.wembleystadium.com/support/solutions/articles/7000100043-frequently-asked-questions — different dimensions and event-specific override warning
+- https://www.wembleystadium.com/news/2026/06/02/08/59/Capitals-Summertime-Ball — event-level bag, power-bank, and sign answers
+- https://www.willmybagfit.net/venues — free 144-venue substitute
+- https://www.concertbagpolicy.com/all-venues — free 175-venue affiliate substitute and its event caveat
+- https://bounce.com/ls/affiliates — official eligibility, 10% rate, completed-booking condition, and payout terms
+- https://help.luggagehero.com/en/articles/13570862-commission-tiers-bonus-opportunities — official affiliate tiers and click thresholds
