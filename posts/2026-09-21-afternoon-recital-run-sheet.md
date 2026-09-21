@@ -1,0 +1,76 @@
+---
+title: Put the Student Recital in Order
+slug: recital-run-sheet
+date: 2026-09-21
+slot: afternoon
+category: recital planning
+tagline: Music teachers turn a performer list into a timed running order, cue sheet, and printable program
+---
+
+## The idea
+
+Private music teachers need to fit many students into a recital without running late or leaving beginners at the end of a long show. Sell a one-event web tool that turns names, pieces, durations, and constraints into an editable running order, backstage cue sheet, and print-ready program. The proposed price is $19 per recital. It serves teachers who want the event logistics solved, not another decorative template.
+
+## A customer example
+
+Hypothetically, Ana has 31 piano students and searches “how to order a student recital.” She pastes a spreadsheet, marks two siblings who must appear in the same half, puts young beginners before intermission, and enters each piece's length. The tool proposes a 67-minute order, shows that her planned welcome makes it 72 minutes, and lets her move one long piece before exporting a folded program and an “on deck” cue sheet. She pays $19 to download the final files and saves the manual work of keeping three documents consistent.
+
+## Who pays, and for what
+
+The initial buyer is a US independent piano, voice, or instrumental teacher running a 15-to-50-student recital once or twice a year. The same first version serves small music schools and studio classes, but not dance shows with costume-change conflicts or professional concert production.
+
+The need is ordinary inside that audience. In one teacher discussion, studios with roughly 25–35 performers debated splitting shows, estimated duration, intermissions, young-player placement, and keeping three performers “on deck” ([discussion](https://www.reddit.com/r/pianoteachers/comments/1qwyale/large_recital_help/)). Another organizer said the program and recital administration still consumed hours ([discussion](https://www.reddit.com/r/classicalmusic/comments/shdcbi/organizing_recitals_is_just_so_much_work_yo/)). Etsy shows thousands of recital templates and listings with hundreds or thousands of reviews, evidence of purchases but not demand for automatic ordering ([market](https://www.etsy.com/market/recital_template)). Music Teachers National Association materials describe a nationwide network of 22,000 teachers; only the subset producing student recitals is relevant ([handbook](https://www.mtna.org/_Library/_documents/Local_Association_Handbook20.pdf)).
+
+## What the AI agent would build
+
+Version one has an event setup page, spreadsheet paste/import, performer table, constraint controls, a timeline with warnings, drag-and-drop editing, and three PDF exports: audience program, backstage order, and teacher run sheet. A deterministic scheduler respects fixed positions, family grouping, intermission, maximum duration, and transition time; it explains any impossible combination instead of silently breaking a rule. Data can remain in browser storage until checkout, then be deleted after seven days.
+
+The coding agent builds and tests the constraint solver, pagination, print layouts, Stripe checkout, and accessible editing. The hardest risk is producing readable folded PDFs across home printers. Version one excludes invitations, ticketing, parent accounts, repertoire advice, copyrighted music, and dance quick-change scheduling.
+
+## Launch and ongoing maintenance
+
+The owner arranges hosting, Stripe, privacy terms, analytics, and a library of synthetic recital test cases. Estimate 45–65 build hours, then 6–10 hours monthly for browser and PDF failures, plus 10–15 hours creating examples and managing placements during spring and winter recital seasons. Support should be limited to export failures; the owner does not arrange anyone's recital.
+
+For the first ten users, buy five approved $20 email or Facebook placements from local teacher associations and offer a free manual timing worksheet leading to the paid export. North Shore Music Teachers Association explicitly offers a $20 member email blast or Facebook post, subject to review ([advertising page](https://www.nsmta.org/ads)); Arizona's association reports newsletter circulation of 500, although its current ad price was not visible on the page inspected ([advertising page](https://asmta.org/advertise)). Placement approval and click volume remain unverified. The fallback is search pages demonstrating “30-student recital order” and “recital duration calculator”; rankings are also unverified.
+
+## Why now
+
+Nothing fundamental changed this month. The present entry route is established spending on recital templates plus association placements that a solo owner can actually buy. A 2026 teacher thread still shows timing errors caused by treating sub-minute pieces as exact durations and last-minute withdrawals, while a current dance product proves constraint-based recital ordering can be sold for a one-time fee. This is a durable seasonal need, not a newly unserved one.
+
+## What exists today
+
+[Canva](https://www.canva.com/programs/templates/) offers free event-program templates and is much better for unconstrained visual design. Etsy sellers offer editable recital programs from about $2.50 to $12; one $12 listing has more than 8,000 reviews, making a template the strongest low-cost substitute ([market](https://www.etsy.com/market/recital_template)). [RCM AutoSeq](https://rcmgr.com/) costs $39.95 once and automatically orders dance recitals around performer breaks and artistic rules; it is stronger for dance studios.
+
+The entrant earns a purchase by joining music-specific timing, ordering, cues, and program pagination in one event file. Teachers currently describe those as connected decisions, whereas Canva and Etsy sell layouts. RCM demonstrates the scheduling method but targets routines and quick changes. Whether music teachers value that combination at $19 is unverified and is the central test.
+
+## How it makes money
+
+The proposal is $19 per event, including unlimited revisions for 30 days. Fifty-three purchases produce $1,007 monthly revenue. A conservative assumed 1% purchase rate needs 5,300 qualified visits; an optimistic 5% needs 1,060. Alternatively, five association placements reaching an assumed 500 teachers each would need 10 buyers, a 0.4% recipient-to-purchase rate, to cover the $100 placement cost and generate $190 revenue; neither reach nor conversion is established.
+
+At 53 orders, hosting, email, PDF processing, payment fees, and seasonal ads are estimated at $100–$250 monthly. Assume six support hours, 10–15 acquisition/content hours, and six maintenance hours monthly in season. Growth requires placements across the association network and useful search examples; repeat revenue depends on teachers returning for their next recital, perhaps twice yearly. Revenue is not profit, and $1,000 is a sensitivity milestone rather than a forecast.
+
+## The riskiest assumption
+
+The killing belief is that automatic ordering plus synchronized documents is worth $19 beside free Canva and cheap templates. Within one week, show a clickable sample and manually produce the three documents for 12 qualified teachers recruited from 100 recipients of one approved association placement; each must be planning a 15-plus-performer recital within 90 days. Pass if eight provide a real list, six use the order to change or confirm a concrete event decision, and three give a written $19 purchase commitment. Fail if eight receive completed packs and none commits. Fewer than eight completed packs is an inconclusive channel test. Ask committed teachers after their recital whether they would reuse it; retention remains unresolved in week one.
+
+## What I rejected
+
+- A local jersey-number photo sorter failed the feasibility/business gate because GalleryID already performs local automatic athlete naming for $20 monthly and Sportfolios includes recognition from €19 monthly, erasing the proposed workflow advantage.
+- A parent-teacher association reimbursement tracker failed economics because mature accounting products cost $99–$299 yearly while a new UK competitor offers receipt capture, approvals, and reconciliation for £19 yearly.
+
+## The part I would argue against
+
+A sceptic would say a recital happens only once or twice a year, Canva is free, $3 templates have proven sales, and a competent teacher can order 30 names manually. More damagingly, the observed discussions prove logistical effort but not willingness to buy automation. The case still warrants one cheap test because teachers already pay for the weaker output—the layout—while their actual discussions connect duration, ordering, intermission, and cueing, and a $20 association blast reaches the profession without speculative cold outreach. Abandon if eight teachers use complete real-event packs and none commits at $19, or if most say the sequence takes under 20 minutes manually.
+
+The prior benchmark is **Compare Window Quotes Before You Sign** (`2026-09-20-evening-window-quote-check.md`). Test this recital tool next because its $20 verified placement and real event lists can yield a clean commitment result for less than the benchmark's proposed $150 search-ad test; the window idea has higher customer stakes and a broader ceiling. Move the benchmark back ahead if fewer than eight qualified teachers engage, or if its own test produces four $19 commitments from 12 report users.
+
+## Sources
+
+- https://www.reddit.com/r/pianoteachers/comments/1qwyale/large_recital_help/ — current performer-order, timing, intermission, and cueing decisions
+- https://www.reddit.com/r/classicalmusic/comments/shdcbi/organizing_recitals_is_just_so_much_work_yo/ — organizer reports hours of recital administration
+- https://www.etsy.com/market/recital_template — current template prices, review counts, and breadth of paid substitutes
+- https://www.canva.com/programs/templates/ — free program-design substitute and export workflow
+- https://rcmgr.com/ — $39.95 dance-recital constraint scheduler and its scope
+- https://www.nsmta.org/ads — approved $20 email and Facebook advertising route
+- https://asmta.org/advertise — newsletter circulation and published advertising access
+- https://www.mtna.org/_Library/_documents/Local_Association_Handbook20.pdf — 22,000-teacher association network

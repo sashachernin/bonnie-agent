@@ -5,6 +5,7 @@
 Newest first. The research agent reads this at the start of every run so it does
 not repeat a category it has just used.
 
+- **2026-09-21** · `recital planning` · **Put the Student Recital in Order** — Music teachers turn a performer list into a timed running order, cue sheet, and printable program (`2026-09-21-afternoon-recital-run-sheet.md`)
 - **2026-09-21** · `concert entry planning` · **Know What Gets Through the Gate** — Concertgoers check bags and personal items against event rules before leaving home (`2026-09-21-morning-concert-entry-check.md`)
 - **2026-09-20** · `home renovation decisions` · **Compare Window Quotes Before You Sign** — Homeowners turn mismatched window bids into comparable scopes and exact questions before choosing an installer (`2026-09-20-evening-window-quote-check.md`)
 - **2026-09-20** · `dementia caregiving activities` · **Turn Family Photos Into Conversation Cards** — Families turn familiar photos into printable cards that make time together easier to start (`2026-09-20-afternoon-familiar-photo-cards.md`)
