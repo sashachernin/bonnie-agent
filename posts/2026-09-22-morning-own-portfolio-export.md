@@ -1,0 +1,78 @@
+---
+title: Keep Your Portfolio Without the Builder Bill
+slug: own-portfolio-export
+date: 2026-09-22
+slot: morning
+category: website ownership
+tagline: Artists turn a simple Squarespace portfolio into portable files they can host without another builder subscription
+---
+
+## The idea
+
+Artists and photographers with a rarely changed Squarespace portfolio may want the work online without paying for an all-in-one builder every year. Sell a self-service conversion that rebuilds a verified public portfolio as clean, portable static files, previews every page, and supplies a guided free-hosting deployment. Charge a proposed $39 once. Limit the promise to simple portfolios; stores, member areas, scheduling, and other live features do not qualify.
+
+## A customer example
+
+Hypothetically, Lena receives a renewal notice for a five-page photography portfolio. She finds an article for “export Squarespace portfolio,” enters her domain, proves control with a DNS record, and sees a free compatibility report. The service collects her headings, captions, images, page addresses, and metadata, then maps them into a restrained gallery template. She checks the mobile preview, pays $39, downloads the files, and follows the Cloudflare Pages steps; her domain now serves the portfolio while she retains the source archive.
+
+## Who pays, and for what
+
+The initial customer is a creator who controls a domain, has a public brochure or portfolio site, changes it infrequently, and does not use commerce. The same first version can serve consultants and local businesses with similarly static sites, but not anyone dependent on appointments, email campaigns, gated content, or a store.
+
+The need is current and concrete. One photographer asked for a cheaper portfolio because Squarespace included features they did not need ([discussion](https://www.reddit.com/r/photography/comments/1wmwhal/using_a_cheaper_portfolio_website/)); another owner with a basic low-traffic site reported a price change they could not defer ([discussion](https://www.reddit.com/r/squarespace/comments/1v54ykg/correction_to_squarespace_price_update/)). Squarespace's own guide says portfolio pages, style settings, headers, footers, and custom CSS do not export. Those signals establish frustration and a broken exit workflow, not willingness to pay $39.
+
+## What the AI agent would build
+
+Version one has a landing page, URL and ownership check, compatibility scan, page-and-image review, three fixed gallery themes, mobile preview, Stripe checkout, ZIP download, and Cloudflare deployment instructions. A server-side crawler reads only verified public pages; a deterministic converter downloads permitted assets, preserves page paths and metadata, and renders accessible HTML and CSS. Temporary copies delete after seven days.
+
+The coding agent builds the crawler, mapper, preview sandbox, image optimization, link checker, export, and regression fixtures. The hardest risk is reliably extracting JavaScript-rendered galleries without copying proprietary Squarespace code. Version one therefore reconstructs content in its own templates and rejects unsupported blocks instead of promising visual identity. It excludes editing, hosting accounts, domain changes, forms, shops, blogs with comments, and pixel-perfect cloning.
+
+## Launch and ongoing maintenance
+
+The owner arranges hosting, Stripe, object storage, terms, takedown handling, and a test Squarespace site. Budget 45–70 build hours, then roughly 6 hours monthly for platform breakage, 8 for failed conversions and refunds, and 12–18 for examples and acquisition. The agent can run fixtures and flag selector changes; the owner reviews copyright or ownership exceptions.
+
+For the first ten users, publish manual before-and-after examples for “export Squarespace portfolio” and “leave Squarespace keep design.” Results inspected this run were led by Squarespace's limited WordPress export guide and owner discussions, giving a useful exact-query entry but no evidence that a new page will rank. With moderator permission, offer 20 current portfolio owners a free compatibility report; the verified fallback is a capped $100 exact-match search-ad test. No community promotion should occur without permission.
+
+## Why now
+
+Squarespace changed its plan structure in 2026, and current owners report renewal increases; its Basic plan is $16 monthly when billed annually ([pricing](https://static1.squarespace.com/static/535522c9e4b0ecf5755f4156/t/67b5a7ef08cd5212597f7f91/1739958258221/squarespace-usd-pricing-feb2025-all.pdf)). More importantly, the official export guide, updated in 2026, still omits the very portfolio pages and styling a creative wants to preserve. There is no durable technological window, but the current price-change discussions create reachable intent this month.
+
+## What exists today
+
+[HTTrack](https://www.httrack.com/) is free and downloads linked site files, but it is an offline copier rather than a reviewed, host-ready portfolio rebuild. [SiteSucker](https://apps.apple.com/us/app/sitesucker/id346896838?platform=mac) costs $4.99 on iOS and also mirrors sites for offline use. [Carrd Pro Standard](https://carrd.com/docs/pro/plans) costs $19 yearly with custom domains; its $49 yearly Pro Plus plan can download sites built in Carrd. [Pixpa](https://www.pixpa.com/pricing) starts at $9 monthly before annual discounts and is much stronger for editing, stores, and client galleries. Cloudflare offers a $0 plan and supports custom domains, though setup is less friendly than a managed builder.
+
+The decisive reason to choose this product is not a better editor: it turns an existing simple portfolio into checked files without a manual rebuild, directly addressing content Squarespace says it will not export. Free HTTrack is the strongest substitute and may be sufficient for technical users. The test must show that nontechnical owners value the review and deployment path.
+
+## How it makes money
+
+The proposal is $39 for one conversion and 30 days of repeat exports. Twenty-six purchases produce $1,014 revenue. At an assumed conservative 1% qualified-visit purchase rate, that needs 2,600 monthly visits; at an optimistic 4%, 650. Neither rate nor attainable search traffic is established.
+
+At 26 orders, estimate $40–$90 monthly for processing, storage, email, payment fees, and monitoring, plus 20–32 owner hours across support, maintenance, and acquisition. A $100 ad test is additional, not a durable acquisition assumption. Search examples for different simple portfolio structures can keep attracting new movers, but purchases are one-off and revenue is not profit. The audience is bounded to owners whose subscription savings exceed the switching effort.
+
+## The riskiest assumption
+
+The killing belief is that a clean automatic rebuild is worth $39 beside free mirroring tools and cheap builders. In one week, recruit 20 qualified owners from 40 permission-based replies or exact-query visitors; each must control a simple live Squarespace portfolio and be considering cancellation within 90 days. Manually create a host-ready preview, then request a written $39 purchase commitment. Pass if 10 inspect a complete preview, six prefer it to rebuilding, and three commit; fail if 10 inspect one and none commits. Fewer than 10 completed reviews is an inconclusive channel test. Do not collect money during this run.
+
+## What I rejected
+
+- A wedding alcohol shopping calculator failed standalone value because retailers and numerous free calculators already produce detailed lists, with no supported paid advantage.
+- A Reddit-native daily puzzle failed economics because a current developer reports even a top game near 200 daily plays while the meaningful fund threshold requires thousands of daily engagers.
+
+## The part I would argue against
+
+A sceptic would say this is a fragile crawler sold between free HTTrack and a $19-a-year Carrd account. A creative may reasonably prefer rebuilding once in a maintained editor, while a copied site can lose forms, animation, accessibility, or search position. That objection confines the product to simple, infrequently edited portfolios. A cheap test remains worthwhile because Squarespace explicitly cannot export portfolio pages or styles and current owners describe paying for capabilities they do not need. Abandon if none of ten owners who inspect a faithful real-site preview commits at $39, or if more than two of ten sites require manual repair.
+
+The prior benchmark is **Find Sleep Audio That Will Not Hurt** (`2026-09-21-evening-sleep-audio-match.md`). Test the portfolio converter first because the official export limitation, current price event, and $39 commitment create a sharper one-week falsification than an affiliate click. Restore the sleep-audio idea to first place if fewer than ten qualified owners can be reached or fewer than three commit; verified product clicks and kept purchases would also move that benchmark ahead.
+
+## Sources
+
+- https://support.squarespace.com/hc/en-us/articles/206566687-Exporting-your-site — official export workflow and excluded content
+- https://static1.squarespace.com/static/535522c9e4b0ecf5755f4156/t/67b5a7ef08cd5212597f7f91/1739958258221/squarespace-usd-pricing-feb2025-all.pdf — official plan prices and features
+- https://www.reddit.com/r/photography/comments/1wmwhal/using_a_cheaper_portfolio_website/ — current photographer seeking a cheaper, simpler portfolio
+- https://www.reddit.com/r/squarespace/comments/1v54ykg/correction_to_squarespace_price_update/ — current owner reports and Squarespace response on pricing
+- https://www.httrack.com/ — free website-copying substitute and scope
+- https://apps.apple.com/us/app/sitesucker/id346896838?platform=mac — $4.99 mirroring substitute and rights warning
+- https://carrd.com/docs/pro/plans — $19 and $49 annual plans and source-download feature
+- https://www.pixpa.com/pricing — portfolio-builder prices and stronger managed features
+- https://www.cloudflare.com/plans/ — free hosting plan
+- https://developers.cloudflare.com/pages/configuration/custom-domains/ — custom-domain deployment requirements
