@@ -5,6 +5,7 @@
 Newest first. The research agent reads this at the start of every run so it does
 not repeat a category it has just used.
 
+- **2026-09-23** · `children’s resale events` · **Find the Next Kids Resale** — Seattle parents compare verified kids consignment sales by date, location, bargains, and seller payout (`2026-09-23-morning-seattle-kids-resale-calendar.md`)
 - **2026-09-22** · `dog enrichment shopping` · **Buy Fewer Dog Toys They Will Use** — Dog owners rotate toys they already have and buy only replacements matched to how their dog plays (`2026-09-22-evening-dog-toy-rotation.md`)
 - **2026-09-22** · `personalized puzzle gifts` · **Turn Family Memories Into a Puzzle Book** — Gift buyers turn family names, places, and stories into a printable puzzle book made for one person (`2026-09-22-afternoon-family-story-puzzle-book.md`)
 - **2026-09-22** · `website ownership` · **Keep Your Portfolio Without the Builder Bill** — Artists turn a simple Squarespace portfolio into portable files they can host without another builder subscription (`2026-09-22-morning-own-portfolio-export.md`)
