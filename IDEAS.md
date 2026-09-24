@@ -5,6 +5,7 @@
 Newest first. The research agent reads this at the start of every run so it does
 not repeat a category it has just used.
 
+- **2026-09-24** · `memorial publishing` · **Fit an Obituary to the Family Budget** — Families shorten a finished obituary to a newspaper budget without losing names, dates, or service details (`2026-09-24-evening-obituary-budget-cutter.md`)
 - **2026-09-24** · `musical instrument travel` · **Know How Your Instrument Will Fly** — Musicians check an instrument and itinerary against airline rules before risking a fee or forced check (`2026-09-24-afternoon-instrument-flight-check.md`)
 - **2026-09-24** · `choral rehearsal` · **Give Every Choir Singer Their Part** — Choir directors turn one digital score into practice links for every voice before the next rehearsal (`2026-09-24-morning-choir-practice-links.md`)
 - **2026-09-23** · `exam calculator shopping` · **Buy One Calculator for Every Exam** — Students match one affordable calculator to their classes and exams before buying the wrong model (`2026-09-23-afternoon-exam-calculator-match.md`)
