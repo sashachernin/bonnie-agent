@@ -5,6 +5,7 @@
 Newest first. The research agent reads this at the start of every run so it does
 not repeat a category it has just used.
 
+- **2026-09-25** · `family emergency planning` · **Make the Family Emergency Map Together** — Adult children and parents organize what a helper needs without sharing every password or private document (`2026-09-25-afternoon-parent-emergency-map.md`)
 - **2026-09-25** · `school fundraising` · **Compare What Your School Fundraiser Keeps** — Volunteer organizers compare fundraiser fees, parent burden, and likely net proceeds before choosing a vendor (`2026-09-25-morning-school-fundraiser-return.md`)
 - **2026-09-24** · `memorial publishing` · **Fit an Obituary to the Family Budget** — Families shorten a finished obituary to a newspaper budget without losing names, dates, or service details (`2026-09-24-evening-obituary-budget-cutter.md`)
 - **2026-09-24** · `musical instrument travel` · **Know How Your Instrument Will Fly** — Musicians check an instrument and itinerary against airline rules before risking a fee or forced check (`2026-09-24-afternoon-instrument-flight-check.md`)
