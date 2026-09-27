@@ -5,6 +5,7 @@
 Newest first. The research agent reads this at the start of every run so it does
 not repeat a category it has just used.
 
+- **2026-09-27** · `church bulletins` · **Finish the Church Bulletin Before Sunday** — Small church offices turn weekly worship details into a print-ready folded bulletin without desktop publishing software (`2026-09-27-morning-weekly-bulletin-builder.md`)
 - **2026-09-26** · `youth sports photo sharing` · **Give Every Player Their Game Photos** — Team volunteers sort game photos by jersey number so each family can find their player without face recognition (`2026-09-26-evening-jersey-photo-galleries.md`)
 - **2026-09-26** · `research participant recruitment` · **Budget the Next Online Research Study** — Researchers compare participant platforms and produce a defensible study budget before recruiting anyone (`2026-09-26-morning-study-recruitment-budget.md`)
 - **2026-09-25** · `museum admission planning` · **Find the Museum Days Your Family Gets Free** — Chicago families match their household to free museum dates, proof rules, and reservation links (`2026-09-25-evening-chicago-free-museum-planner.md`)
