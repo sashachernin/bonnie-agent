@@ -1,0 +1,78 @@
+---
+title: Cover the School Break With Camps That Fit
+slug: summer-camp-cover-plan
+date: 2026-09-27
+slot: afternoon
+category: school holiday childcare
+tagline: Irish parents fit real camp hours, ages, travel, and costs into a workable school-break plan
+---
+
+## The idea
+
+Working parents in Ireland need to cover school-break weeks, not merely discover appealing camps. Offer a free planner that matches each child's age and location to camp dates and actual drop-off and collection times, then shows uncovered work hours and total cost. Camp providers pay a proposed €59 monthly during booking season for clearly labelled featured placements; payment never changes eligibility or schedule calculations.
+
+## A customer example
+
+Hypothetically, Niamh needs cover near Swords for children aged 6 and 10 during four July weeks, from 9:00 to 16:30. She finds the planner through “summer camps Swords July,” enters those constraints, and compares complete week-by-week combinations rather than opening separate Facebook posts. The plan flags a 14:00 finish on Tuesday, shows a provider's sibling discount, and links to the provider to confirm availability and book. Niamh gets a printable coverage grid; a camp pays only when its labelled featured result receives visibility and clicks.
+
+## Who pays, and for what
+
+The initial user is an Irish parent combining camps with work and annual leave for at least two holiday weeks. The same first version serves one-child households and parents seeking activities rather than childcare, but families needing specialised support require provider-confirmed information and are not promised a match.
+
+The need recurs at Easter, summer, and mid-term. In a current [Parenting Ireland discussion](https://www.reddit.com/r/ParentingIE/comments/1ucz1eu/is_it_just_me_or_is_booking_summer_camps_in/), one parent described piecing together eight weeks from 15 tabs and WhatsApp; separate commenters said 9:30-to-14:00 hours do not cover a workday. Supply is substantial but bounded: [Kids Patch](https://www.kidspatch.ie/classes/camps.html) currently lists 68 camps across 11 counties, while HeadStart reports 104. Those directories demonstrate activity, not the number of parents who need multi-week cover or providers willing to advertise.
+
+## What the AI agent would build
+
+Version one has a household form, county and travel-radius filter, weekly calendar, coverage-gap warnings, total-cost comparison, and source-dated camp pages with outbound booking links. A small database stores dates, daily hours, ages, location, price, discounts, accessibility notes, source, and last check; deterministic code rejects impossible combinations and creates shareable plans. No account is needed, and plans can remain in the browser.
+
+The coding agent builds the importer, editing interface, schedule solver, tests, analytics, and later Stripe billing. The hardest risk is stale availability: version one shows published details and a checked date but sends parents to providers to confirm and book. It excludes booking, payments for camps, reviews, childcare vetting, transport routing, and claims about suitability for a particular child.
+
+## Launch and ongoing maintenance
+
+The owner arranges hosting, analytics, privacy terms, a domain, and Stripe only after provider interest. Estimate 45–65 build hours. During February–August, allow 20–30 owner hours monthly to verify 100–150 listings, 12–20 for useful county/week pages, five for corrections, and 15–25 for provider sales; off-season work should be lower. The agent can detect changed pages, but the owner must resolve ambiguous hours and discounts.
+
+For the first ten users, invite 60 parents from personal contacts and permission-based local-parent placements who are actively planning at least two weeks, then manually return ten coverage grids. Search is the continuing route: inspected results for “summer camps Ireland 2026” already contain HeadStart, Kids Patch, provider pages, and newspaper guides. The entry pages would instead answer “Swords camps open past 3pm” and “July camp cover for ages 6 and 10.” Ranking is unverified. A fallback is asking participating providers to share a free co-branded local coverage page through their existing parent lists; provider participation is also unverified.
+
+## Why now
+
+There is no regulatory or technological catalyst. The timely signal is a 2026 wave of live structured supply alongside continuing fragmentation: [Sortd](https://sortd-ireland.ie/) says it began because a parent was trawling 14 WhatsApp groups and spreadsheets, and it is expanding from Dublin across Leinster. The official [Department of Education page](https://www.gov.ie/en/department-of-education/services/school-holiday-dates/) says summer dates are not standardised by school, making a parent-entered date range more useful than a national calendar. The entry route is the coverage calculation, not a claim that camp discovery is unmet.
+
+## What exists today
+
+[HeadStart](https://headstart.ie/camps/summer/), [Kids Patch](https://www.kidspatch.ie/classes/camps.html), and [Sortd](https://sortd-ireland.ie/) are free to parents. HeadStart offers broad national listings, Kids Patch exposes filters and detailed descriptions, and Sortd has area, age, and day search plus freshness alerts. Provider sites are also strong substitutes: [STARCAMP](https://starcamp.ie/search-summer/) lists dates, locations, multi-camp discounts, and 2026 prices from €112 to €132 on one searchable page.
+
+The decisive reason to use this planner is one computed answer to “which combination covers my required weeks and work hours?” The parent discussion supports that job and specifically distinguishes timing from booking. Incumbents are better at discovery, editorial descriptions, and established provider relationships; users need not switch from them, only use the planner before following an authoritative booking link. Whether enough parents prefer the computed plan is still untested.
+
+## How it makes money
+
+The proposal is €59 per month for a labelled provider card limited to matching places, ages, and dates. Eighteen providers produce €1,062 monthly revenue, a buffer around the US$1,000 milestone before exchange-rate movement. Irish directories already sell this format: [The Kerry Mam](https://thekerrymam.ie/advertise/) offers featured listings and banners, and its current search description says prices start at €10 per week; [Trades Ireland](https://tradesireland.ie/advertise) publishes €249 yearly featured listings and €189 monthly banners. These are comparable advertising purchases, not evidence for this price or audience.
+
+Assume 3,000 qualified monthly parent visits and an 8% provider-click rate, yielding 240 outbound clicks. At a conservative 3% close rate, 600 qualified provider conversations are needed for 18 sponsors; at an optimistic 10%, 180 are needed. If the owner conducts 15 tailored conversations in five hours weekly, that is roughly 60–100 hours for the optimistic case and 200–330 for the conservative case, spread across booking season. Add 40–55 monthly hours for data, content, and support. Hosting, email, monitoring, and payment fees are estimated at €60–€150 monthly, so revenue is not profit. Growth requires repeating county-and-week coverage pages each season; neither free traffic nor sponsor renewal is assumed.
+
+## The riskiest assumption
+
+The killing belief is that a computed coverage plan changes parent choices enough that providers value the resulting clicks. In one week, invite 60 parents who must plan at least two 2027 holiday weeks and can name required hours and children's ages. Manually build plans from public listings for the first 20 qualified respondents, recording whether they inspect a gap, save or share the grid, and open a provider booking page; show anonymous totals to 20 listed providers and offer a no-charge button committing to a future €59 month.
+
+Pass if 15 parents complete the task, ten save or share a plan, eight open a relevant provider, and two providers make the price-aware commitment. Fail if 15 complete but fewer than five open a provider, or if all 20 providers see qualifying behaviour and none commits. Fewer than 15 completed parent tasks is an inconclusive channel test. Seasonal return use remains unresolved until the next break.
+
+## What I rejected
+
+- A sewing-machine presser-foot matcher failed economics: a verified 10% affiliate rate still requires hundreds of low-value orders, while established retailers already offer model compatibility search.
+- A pet-sitter instruction handoff app failed standalone value: current sitters already use bundled client-management products, shared forms, calendars, and notes, leaving no supported reason to adopt another paid tool.
+
+## The part I would argue against
+
+A sceptic would say Ireland already gained several free camp directories in 2026, including Sortd from a founder describing almost the identical frustration. Many camps fill without advertising, camp hours often fail as childcare regardless of presentation, and maintaining availability could consume the entire €1,062 milestone. That objection defeats a generic directory but not yet the narrower coverage planner: parents explicitly describe timing and multi-week assembly as the problem, and current listings provide enough structured supply for a manual test. Abandon it if 15 qualified parents rarely open provider links or if 20 providers shown that behaviour produce no price-aware commitment.
+
+The prior benchmark is **Compare What Your School Fundraiser Keeps** (`2026-09-25-morning-school-fundraiser-return.md`). Test the fundraiser calculator first because confusing invoices demonstrate a more consequential decision and existing vendor-directory prices support its payer more directly. Move this camp planner ahead only if the manual test gets ten saved plans, eight provider clicks, and two €59 commitments, or if the fundraiser test yields no vendor commitments after demonstrated organiser use.
+
+## Sources
+
+- https://www.reddit.com/r/ParentingIE/comments/1ucz1eu/is_it_just_me_or_is_booking_summer_camps_in/ — current multi-week, hours, locality, and discovery problems, plus objections
+- https://www.gov.ie/en/department-of-education/services/school-holiday-dates/ — official rule that summer dates vary by school
+- https://headstart.ie/camps/summer/ — free national substitute and 104 current camp listings
+- https://www.kidspatch.ie/classes/camps.html — free substitute, listing coverage, hours, ages, and published prices
+- https://sortd-ireland.ie/ — strongest new local substitute, filters, freshness claim, and founder's acquisition problem
+- https://starcamp.ie/search-summer/ — provider's own dates, locations, prices, discounts, and booking links
+- https://thekerrymam.ie/advertise/ — Irish family-directory featured listing and banner model
+- https://tradesireland.ie/advertise — published Irish directory advertising prices
