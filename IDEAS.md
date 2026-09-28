@@ -5,6 +5,7 @@
 Newest first. The research agent reads this at the start of every run so it does
 not repeat a category it has just used.
 
+- **2026-09-28** · `boot repair` · **Find the Right Repair for Your Boots** — Boot owners match an exact model and damage to a repairer before paying to ship or replace it (`2026-09-28-evening-boot-resole-match.md`)
 - **2026-09-28** · `used piano buying` · **Know What That Free Piano Will Cost** — Used-piano shoppers screen listings and budget inspection, moving, tuning, and repairs before committing (`2026-09-28-morning-used-piano-cost-check.md`)
 - **2026-09-27** · `school holiday childcare` · **Cover the School Break With Camps That Fit** — Irish parents fit real camp hours, ages, travel, and costs into a workable school-break plan (`2026-09-27-afternoon-summer-camp-cover-plan.md`)
 - **2026-09-27** · `church bulletins` · **Finish the Church Bulletin Before Sunday** — Small church offices turn weekly worship details into a print-ready folded bulletin without desktop publishing software (`2026-09-27-morning-weekly-bulletin-builder.md`)
