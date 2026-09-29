@@ -5,6 +5,7 @@
 Newest first. The research agent reads this at the start of every run so it does
 not repeat a category it has just used.
 
+- **2026-09-29** · `dog grooming cancellations` · **Fill the Grooming Slot With the Right Dog** — Groomers match a cancelled appointment to waiting dogs that fit the available time (`2026-09-29-evening-grooming-waitlist-fill.md`)
 - **2026-09-29** · `sensory-friendly haircuts` · **Find a Haircut That Fits Their Sensory Needs** — Families compare verified haircut accommodations before booking a stressful appointment (`2026-09-29-afternoon-sensory-haircut-match.md`)
 - **2026-09-29** · `yarn shopping` · **Price the Yarn Swap Before You Buy** — Knitters compare compatible yarns by full project cost and quantity before buying a sweater's worth (`2026-09-29-morning-yarn-swap-shopping.md`)
 - **2026-09-28** · `boot repair` · **Find the Right Repair for Your Boots** — Boot owners match an exact model and damage to a repairer before paying to ship or replace it (`2026-09-28-evening-boot-resole-match.md`)
