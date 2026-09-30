@@ -1,0 +1,79 @@
+---
+title: Find a Lane Swim That Fits Today
+slug: leeds-lane-swim
+date: 2026-09-30
+slot: morning
+category: lap swimming
+tagline: Leeds swimmers compare today's lane sessions across pools without opening every timetable
+---
+
+## The idea
+
+People who want to swim laps around work need to know which nearby pool has a suitable session today. Build a free Leeds timetable that puts public lane sessions from council, university, and independent pools on one source-linked timeline. Visitors filter by time, location, pool length, price, and restricted-lane status. Local swim teachers, coaches, physiotherapists, and shops pay a proposed monthly sponsorship for a clearly labelled placement.
+
+## A customer example
+
+Hypothetically, Priya finishes work near Leeds station at 5:30 and searches “lane swimming Leeds tonight.” She selects 6–9 p.m., sees that one pool is closed for club use while another has a two-hour lane session, checks the source and drop-in price, then goes to the pool's booking page. She pays the pool, not this site. A local adult-swim teacher pays for the relevant sponsored card Priya may also open.
+
+## Who pays, and for what
+
+The initial users are Leeds adults fitting casual lane swimming around work, especially swimmers willing to use more than one facility. The same first version serves triathletes, students, visitors, and beginners seeking quieter adult sessions; it does not serve club-only training or guarantee space.
+
+This is recurring, not a one-off plan. A current discussion reports only two usable one-hour sessions and cancellations; another swimmer built an Amsterdam aggregator after repeatedly checking five sites. A Leeds discussion in 2026 still tells swimmers to “check the timetable,” and Leeds & Bradford Triathlon Club uses several pools. Those are independent need and audience signals, but there is no measured count of Leeds residents who compare pools. Sponsors pay to reach this specific local intent, not for a generic logo directory.
+
+## What the AI agent would build
+
+Version one is a mobile timeline covering 12–15 Leeds pools, with filters, map links, source and checked dates, prices, accessibility notes, and an “official timetable” button. A small admin screen imports structured rows from manually reviewed pages; a scheduled checker flags changed pages but never silently rewrites sessions. Anonymous use needs no account. Sponsor cards carry dates and click counts, and Stripe handles monthly billing only after the test.
+
+The agent builds parsers for the few stable public formats, validation tests, expiry rules, and monitoring. The hardest risk is schedule freshness across HTML calendars and temporary PDF timetables. Version one excludes bookings, crowd predictions, user reports, memberships, and claims that a lane is available on arrival.
+
+## Launch and ongoing maintenance
+
+The owner arranges hosting, analytics, disclosures, Stripe, and permission before automated reuse where terms are unclear. Budget 30–45 build hours, 12–18 hours to enter the first schedules, then 3–5 hours weekly checking changes and exceptions, two hours handling corrections, and 4–8 hours monthly selling and reporting to sponsors. The agent can detect source changes; the owner resolves ambiguity.
+
+For the first ten users, ask Leeds & Bradford Triathlon Club and two adult-swim teachers to share a manual, source-linked “next seven days” sheet with 30 members who swim independently; this contact route is public, but permission to distribute is unverified. The fallback is permission-based replies to recent Leeds pool questions. Search results for “Leeds lane swimming timetable today” and “Leeds adult lane swimming pool schedule evening” currently lead to individual facilities, not one comparison. That creates a concrete entry page, but ranking is unverified.
+
+## Why now
+
+There is no new regulation or platform change. The present entry is that September 2026 schedules are accessible but fragmented: [The Edge](https://sport.leeds.ac.uk/the-edge/swimming/) publishes a lane-by-lane weekly table, [Bramley Baths](https://www.bramleybaths.co.uk/pool) uses a calendar, and Active Leeds has separate prices and changing PDF timetables. Fresh 2026 discussions still describe inaccurate or inconvenient lap schedules. This is an established weekly information need, not a claim that swimming suddenly grew.
+
+## What exists today
+
+Active Leeds, The Edge, and Bramley Baths each publish their own schedules free; they are authoritative and will always beat an aggregator on final confirmation. [Public Pools+](https://apps.apple.com/us/app/public-pools/id6792580787) is free in supported cities, with an optional Pro tier whose price I could not verify. Toronto's [SwimCal](https://swimcal.ca/) is free and updates 46 pools from open data. Amsterdam's Zwemsterdam is free with optional donations.
+
+The decisive reason to choose this page is Leeds-wide comparison by usable time: the official substitutes make a swimmer inspect different formats one facility at a time, exactly the repeated effort swimmers report. Users need not switch from official sites; the comparison sends them there to confirm. Incumbents are stronger where open data permits automatic freshness, and Public Pools+ could add Leeds.
+
+## How it makes money
+
+Proposed price is £100 per month for one category-exclusive local sponsor, cancellable monthly after a trial report. At an explicitly assumed $1.25 per pound, eight sponsors produce £800, or $1,000 revenue. Published comparables show aquatic audiences already carry ads: Swim England lists £124 monthly for a shared Masters footer and £162.50 for a shared Just Swim mid-page unit. Those figures do not prove a small Leeds site can charge £100.
+
+Assume conservatively 4,000 qualified monthly visits, 1% sponsor clicks, and 100 tailored approaches producing 12 conversations and four sponsors: £400. An optimistic case assumes 10,000 visits, 1.5% clicks, and 60 approaches producing 18 conversations and eight sponsors: £800. All rates are assumptions. Hosting, email, monitoring, and payment fees should be £30–£80 monthly, leaving owner time unpaid; revenue is not profit. Eight sponsors mean roughly 4–8 sales hours and 16–24 editorial/support hours monthly. Continued growth requires useful pool and time pages, club referrals, and expansion to an adjacent city only after Leeds stays accurate.
+
+## The riskiest assumption
+
+The killing belief is that swimmers will repeatedly use a cross-pool view often enough for eight local businesses to value £100 monthly. In one week, with administrators' permission, give a manually assembled mobile page to 30 Leeds adults who independently swim at least twice monthly. Pass the user side if 20 complete a real pool search, 12 open an official timetable, and eight return for a second planned swim within seven days. Then show aggregate behavior to 20 relevant local businesses and ask for a written commitment to a £100 first month; pass commercially at three commitments, fail at zero after 15 decision-makers see the report. Fewer than 20 qualified swimmers or 15 business decisions is inconclusive. Do not collect money in the research run.
+
+## What I rejected
+
+- A cat-safe bouquet finder failed the feasibility gate because cross-contamination, incomplete flower identification, and florist liability make a safety promise unacceptable for a solo affiliate site.
+- A pantry inventory app failed the adoption case because current users and builders identify continual logging and inventory drift as the reason these tools become another chore.
+
+## The part I would argue against
+
+A sceptic would say this is a maintenance-heavy wrapper around free official schedules, while swimmers can bookmark one pool and local advertisers will not pay before traffic exists. That is serious: one stale holiday timetable damages trust, and eight sponsors may require more selling than the revenue warrants. The case still merits a manual test because people explicitly report checking several sites, current Leeds results remain facility-by-facility, and aquatic publishers demonstrate real sponsor spending. Abandon if fewer than eight of 20 qualified users return, or if 15 informed local businesses yield no £100 commitment.
+
+The prior benchmark is **Know What That Free Piano Will Cost** (`2026-09-28-morning-used-piano-cost-check.md`). Test the piano idea next because its avoided loss and £95–£150 professional transaction are stronger than this directory's unverified local ad economics. Move the swim timetable ahead only if it earns three sponsor commitments and eight repeat users, or if piano professionals reject the proposed lead price.
+
+## Sources
+
+- https://www.reddit.com/r/Swimming/comments/1rnoe9u/does_anyone_else_have_frustrating_lap_pool/ — current schedule accuracy, cancellation, and work-hour frustration
+- https://www.reddit.com/r/Amsterdam/comments/1pq5d1t/made_a_simple_site_to_see_all_amsterdam_swimming/ — repeated multi-site checking and a working free aggregator
+- https://www.reddit.com/r/Leeds/comments/1qv77se/lane_swimming_recs/ — current Leeds pool-search behavior
+- https://sport.leeds.ac.uk/the-edge/swimming/ — current complex weekly, lane-level timetable
+- https://www.bramleybaths.co.uk/pool — current calendar format and lane sessions
+- https://active.leeds.gov.uk/classesandactivities/pricing — current £6.60 casual-swim price and concessions
+- https://lbt.org.uk/swim-bike-run/swim/ — local triathlon club uses several pools
+- https://apps.apple.com/us/app/public-pools/id6792580787 — free multi-city competitor and unpriced Pro features
+- https://swimcal.ca/ — free open-data competitor covering 46 Toronto pools
+- https://www.swimming.org/swimengland/banner-advertising-swimming-org/ — published swimming-audience ad inventory and rates
+- https://olympiumartswim.ca/get-involved/corporate-sponsorship/ — another organization's sponsor tiers and audience inclusions
