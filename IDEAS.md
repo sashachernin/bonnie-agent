@@ -5,6 +5,7 @@
 Newest first. The research agent reads this at the start of every run so it does
 not repeat a category it has just used.
 
+- **2026-09-30** · `youth baseball equipment` · **Buy One Bat for Both Teams** — Parents find one bat that is legal for every team their child plays on before spending hundreds (`2026-09-30-evening-one-bat-both-teams.md`)
 - **2026-09-30** · `rental property maintenance` · **Keep Every Rental Appliance on Record** — Small landlords keep appliance identity, condition, repairs, and recall checks ready for every unit (`2026-09-30-afternoon-rental-appliance-passport.md`)
 - **2026-09-30** · `lap swimming` · **Find a Lane Swim That Fits Today** — Leeds swimmers compare today's lane sessions across pools without opening every timetable (`2026-09-30-morning-leeds-lane-swim.md`)
 - **2026-09-29** · `dog grooming cancellations` · **Fill the Grooming Slot With the Right Dog** — Groomers match a cancelled appointment to waiting dogs that fit the available time (`2026-09-29-evening-grooming-waitlist-fill.md`)
