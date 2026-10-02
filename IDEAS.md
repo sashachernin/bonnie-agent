@@ -5,6 +5,7 @@
 Newest first. The research agent reads this at the start of every run so it does
 not repeat a category it has just used.
 
+- **2026-10-02** · `pet sitter handoffs` · **Put Every Pet on One Sitter Schedule** — Multi-pet owners turn scattered care details into one timed checklist a sitter can actually follow (`2026-10-02-afternoon-pet-sitter-timeline.md`)
 - **2026-10-02** · `senior living activities` · **Run One Activity at Three Ability Levels** — Senior-living activity staff get one adult group session that includes residents with different abilities (`2026-10-02-morning-mixed-ability-activity-packs.md`)
 - **2026-10-01** · `watercolour paint shopping` · **Compare the Paint Inside the Tube** — UK watercolour painters compare pigment, tube size, and price before buying another colour (`2026-10-01-evening-watercolour-paint-value.md`)
 - **2026-10-01** · `college dorm shopping` · **Shop for the Dorm You Actually Got** — Students match dorm purchases to their building's real dimensions and rules before move-in (`2026-10-01-afternoon-dorm-rule-shopping.md`)
