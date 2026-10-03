@@ -5,6 +5,7 @@
 Newest first. The research agent reads this at the start of every run so it does
 not repeat a category it has just used.
 
+- **2026-10-03** · `youth sports scheduling` · **Catch Schedule Conflicts Before Families Do** — Volunteer league schedulers find coach, field, travel, and rest conflicts before publishing the season (`2026-10-03-afternoon-youth-schedule-audit.md`)
 - **2026-10-02** · `household disposal` · **Know Where That Old Thing Goes** — Phoenix residents find the cheapest legal route for one unwanted household item (`2026-10-02-evening-phoenix-item-disposal.md`)
 - **2026-10-02** · `pet sitter handoffs` · **Put Every Pet on One Sitter Schedule** — Multi-pet owners turn scattered care details into one timed checklist a sitter can actually follow (`2026-10-02-afternoon-pet-sitter-timeline.md`)
 - **2026-10-02** · `senior living activities` · **Run One Activity at Three Ability Levels** — Senior-living activity staff get one adult group session that includes residents with different abilities (`2026-10-02-morning-mixed-ability-activity-packs.md`)
