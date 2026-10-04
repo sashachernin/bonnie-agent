@@ -5,6 +5,7 @@
 Newest first. The research agent reads this at the start of every run so it does
 not repeat a category it has just used.
 
+- **2026-10-04** · `adaptive clothing shopping` · **Find Clothes That Make Dressing Easier** — Canadian caregivers compare clothes by the dressing movement they need to avoid (`2026-10-04-morning-adaptive-clothing-match.md`)
 - **2026-10-03** · `nonprofit donor stewardship` · **Make Sure Every Donor Gets Thanked** — Small nonprofits turn scattered donation exports into one accountable queue for personal thanks (`2026-10-03-evening-donor-thank-you-queue.md`)
 - **2026-10-03** · `youth sports scheduling` · **Catch Schedule Conflicts Before Families Do** — Volunteer league schedulers find coach, field, travel, and rest conflicts before publishing the season (`2026-10-03-afternoon-youth-schedule-audit.md`)
 - **2026-10-02** · `household disposal` · **Know Where That Old Thing Goes** — Phoenix residents find the cheapest legal route for one unwanted household item (`2026-10-02-evening-phoenix-item-disposal.md`)
